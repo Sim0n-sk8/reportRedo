@@ -161,7 +161,7 @@ body{
     align-items: flex-start;
     padding: 15px 15px;
     box-sizing: border-box;
-    border-top: 1px solid #919191;
+    
 }
 
 
@@ -173,9 +173,7 @@ body{
     background-color: #ffffff;
 }
 
-.infoCon .infoMod:last-child {
-    border-bottom: 1px solid #919191;
-}
+
 
 
 
