@@ -23,21 +23,37 @@ body{
     width: 630px;
     height: 1000px;
     background-color: white;
+    border-top: 5px solid orange;
    
 
 }
 
 .banner{
     width: 100%;
-    margin-top: 20%;
+   
     height: 300px;
 }
 
 .logo{
-    width: 25%;
+    width: 35%;
     z-index: 100;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-53%, -280%);
+    margin: 10px;
+    margin-left: 20px;
+    
+}
+
+.socials{
+    background-color: black;
+    border-radius: 20px;
+    width: 30px;
+    height: 30px;
+    
+}
+
+.socialsCon{
+   gap: 2px; 
+   display: flex;
+   float: right;
+   margin-top: 30px;
+   margin-right: 20px;
 }
