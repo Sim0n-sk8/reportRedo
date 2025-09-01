@@ -214,6 +214,59 @@ body{
     font-size: 15px;
 }
 
+.web{
+    text-align: center;
+    width: 100%;
+    background-color: orange;
+    
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    
+}
+
+.web ,a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: -15px; /* smaller space between email and phone */
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* smaller space between icon and text */
+}
+
+.contactItem img {
+  width: 16px; /* smaller icons */
+  height: 16px;
+}
+
+.contact-item p {
+  margin: 0; /* remove default spacing */
+  font-size: 14px; /* optional, adjust as needed */
+}
+
+.created img {
+  width: auto;
+  height: 30px; /* adjust to match footer height */
+}
+
+
 
 
 
