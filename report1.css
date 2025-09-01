@@ -1,5 +1,5 @@
 body{
-    background-color: lightgray;
+    background-color: rgb(163, 162, 162);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,5 +23,21 @@ body{
     width: 630px;
     height: 1000px;
     background-color: white;
+   
 
+}
+
+.banner{
+    width: 100%;
+    margin-top: 20%;
+    height: 300px;
+}
+
+.logo{
+    width: 30%;
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -320%); /* Adjusts for the element's own size */
 }
