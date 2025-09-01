@@ -1,22 +1,17 @@
-body{
-    background-color: rgb(163, 162, 162);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+*{
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
 
 
 
-
-
-
-
-
-
-
-
+body{
+    background-color: rgb(163, 162, 162);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 .reportSize{
@@ -57,3 +52,42 @@ body{
    margin-top: 30px;
    margin-right: 20px;
 }
+
+.ratingCon {
+    width: fit-content;
+    margin: 5px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 16px 24px;
+  
+    border-radius: 8px;
+}
+
+.head {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 4px 0;
+    color: #333;
+}
+
+.subHead {
+    font-size: 13px;
+    margin: 0 0 12px 0;
+    color: #666;
+}
+
+.starsCon {
+    display: flex;
+    gap: 3px;
+
+}
+
+.stars {
+    width: 45px;
+    height: 45px;
+}
+
+
+
