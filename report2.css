@@ -30,13 +30,13 @@ body{
  
 }
 
-.logo{
-    width: 35%;
+.logo {
+    width: 45%;
     z-index: 100;
-    margin: 10px;
-    margin-left: 20px;
-    
+    margin: 10px auto;  /* this centers it horizontally */
+    display: block;     /* ensures auto margin works */
 }
+
 
 
 
@@ -56,7 +56,7 @@ body{
     align-items: center;
     text-align: center;
     padding: 16px 24px;
-  
+    
     border-radius: 8px;
 }
 
@@ -143,50 +143,64 @@ body{
 
 .productGrid {
   display: grid;
-  grid-template-columns: repeat(2, auto); /* auto instead of 1fr so cards shrink to content */
+  grid-template-columns: repeat(2, auto);
   gap: 10px;
-  justify-content: center; /* centers the whole grid */
+  justify-content: center;
   margin: 20px auto;
 }
 
 .productCard {
-  
   border-radius: 8px;
-  padding: 10px;
+  overflow: hidden;           /* keeps image corners clean */
+  padding: 0 0 10px;       /* no padding at top, only sides & bottom */
   width: 280px;
   background-color: #dbdbdb;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  align-items: center; /* centers content inside */
-  text-align: center; /* centers text */
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #a8a8a8;
 }
 
+
 .productImg {
-  width: 270px;
-  height: 270px;
+  width: 100%;
+  height: auto;
   object-fit: cover;
-  border-radius: 6px;
-  margin-bottom: 10px;
-  margin-top: -5px;
+  border-radius: 8px 8px 0 0;  /* rounded top only */
+  margin: 0; 
+  margin-bottom: 10px;                 /* remove spacing */
+  display: block;             /* removes inline gaps */
+}
+
+
+.productText {
+  flex-grow: 1;              /* makes text area expand, so button stays low */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .productText h3 {
-  margin: 0 0 4px;
+  margin: 0 0 20px;
   font-size: 18px;
-   
   color: #333;
-  margin-bottom: 20px;
 }
 
 .productText p {
- margin-bottom: 20px;
+  margin-bottom: 20px;
   font-size: 12px;
   color: #666;
   line-height: 1.4;
 }
 
 .readBtn {
+  margin-top: auto;           /* pushes button to bottom */
+  align-self: center;         /* centers button horizontally */
   display: inline-block;
   padding: 6px 12px;
   background-color: rgb(255, 148, 61);
@@ -195,6 +209,7 @@ body{
   border-radius: 4px;
   font-size: 14px;
 }
+
 
 
 
@@ -209,43 +224,43 @@ body{
 .contact {
   display: flex;
   flex-direction: column;
-  gap: 5px; /* smaller space between email and phone */
+  gap: 5px; 
 }
 
 .contactItem {
   display: flex;
   align-items: center;
-  gap: 5px; /* smaller space between icon and text */
+  gap: 5px;
 }
 
 .contactItem img {
-  width: 16px; /* smaller icons */
+  width: 16px; 
   height: 16px;
 }
 
 .contactItem p {
-  margin: 0; /* remove default spacing */
+  margin: 0; 
   font-size: 10px; 
-  color: #666;/* optional, adjust as needed */
+  color: #666;
 }
 
 .created img {
   width: auto;
-  height: 20px; /* adjust to match footer height */
+  height: 20px;
 }
 
 
 .socials {
     
-    border-radius: 50%;   /* circular */
+    border-radius: 50%;
     width: 35px;
     height: 35px;
-   margin-bottom: 10px;
+    margin-bottom: 10px;
     
 }
 
 .web {
-    text-align: center;       /* centers text + inline elements */
+    text-align: center;
     width: 100%;
     background-color: rgb(255, 148, 61);
     color: white;
@@ -258,7 +273,7 @@ body{
 
 .connect{
    margin: 20px;
-    margin-bottom: 10px;      /* space between title & icons */
+    margin-bottom: 10px;
     font-size: 24px;
     
 }
