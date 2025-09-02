@@ -149,7 +149,7 @@ body{
 .productGrid {
   display: grid;
   grid-template-columns: repeat(2, auto); /* auto instead of 1fr so cards shrink to content */
-  gap: 20px;
+  gap: 10px;
   justify-content: center; /* centers the whole grid */
   margin: 20px auto;
 }
