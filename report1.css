@@ -147,12 +147,18 @@ body{
 
 
 .infoCon {
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
-
     box-sizing: border-box;
     margin-top: 20px;
+    border: 1px solid rgb(158, 158, 158);
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    
 }
 
 
@@ -173,6 +179,16 @@ body{
     background-color: #ffffff;
 }
 
+.infoCon .infoMod:first-child {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.infoCon .infoMod:last-child {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
 
 
 
@@ -185,6 +201,7 @@ body{
     margin-right: 15px;
     flex-shrink: 0;
     object-fit: cover;
+    border-radius: 15px;
 }
 
 
