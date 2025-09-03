@@ -33,8 +33,8 @@ body{
 .logo {
     width: 45%;
     z-index: 100;
-    margin: 10px auto;  /* this centers it horizontally */
-    display: block;     /* ensures auto margin works */
+    margin: 10px auto;  
+    display: block;   
 }
 
 
