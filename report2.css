@@ -78,17 +78,28 @@ body{
     display: flex;
     gap: 3px;
 
+    --baseColor: rgb(255, 148, 61); /* Your orange color */
+    --lightest: color-mix(in srgb, var(--baseColor) 55%, white 45%);
+    --lighter: color-mix(in srgb, var(--baseColor) 65%, white 35%);
+    --medium: color-mix(in srgb, var(--baseColor) 75%, white 25%);
+    --darker: color-mix(in srgb, var(--baseColor) 85%, white 15%);
+    --darkest: var(--baseColor);
 }
 
 .stars {
     width: 50px;
     height: 50px;
     border-radius: 50px;
-    background-color: rgb(255, 148, 61);
     padding: 2px;
     margin-bottom: 10px;
-    
 }
+
+.starsCon .stars:nth-child(1) { background-color: var(--lightest); }
+.starsCon .stars:nth-child(2) { background-color: var(--lighter); }
+.starsCon .stars:nth-child(3) { background-color: var(--medium); }
+.starsCon .stars:nth-child(4) { background-color: var(--darker); }
+.starsCon .stars:nth-child(5) { background-color: var(--darkest); }
+
 
 .message {
     font-family: Arial, Helvetica, sans-serif;
