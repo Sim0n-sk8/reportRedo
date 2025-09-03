@@ -172,5 +172,18 @@
     </div>
 
 
+    <div class="colorPickerCon">
+  <label for="colorPicker">Choose Accent Color:</label>
+  <input type="color" id="colorPicker" value="#ff943d">
+</div>
+
+    <script>
+        const picker = document.getElementById("colorPicker");
+        picker.addEventListener("input", (e) => {
+        document.documentElement.style.setProperty("--accent-color", e.target.value);
+        });
+    </script>
+
+
 </body>
 </html>

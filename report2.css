@@ -2,7 +2,9 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
+:root {
+  --accent-color: rgb(255, 148, 61);
+}
 
 
 
@@ -78,7 +80,7 @@ body{
     display: flex;
     gap: 3px;
 
-    --baseColor: rgb(255, 148, 61); /* Your orange color */
+    --baseColor: var(--accent-color); /* Your orange color */
     --lightest: color-mix(in srgb, var(--baseColor) 55%, white 45%);
     --lighter: color-mix(in srgb, var(--baseColor) 65%, white 35%);
     --medium: color-mix(in srgb, var(--baseColor) 75%, white 25%);
@@ -216,11 +218,11 @@ body{
 }
 
 .readBtn {
-  margin-top: auto;           /* pushes button to bottom */
-  align-self: center;         /* centers button horizontally */
+  margin-top: auto;
+  align-self: center;
   display: inline-block;
   padding: 6px 12px;
-  background-color: rgb(255, 148, 61);
+  background-color: var(--accent-color);
   color: #fff;
   text-decoration: none;
   border-radius: 4px;
@@ -277,22 +279,29 @@ body{
 }
 
 .web {
-    text-align: center;
-    width: 100%;
-    background-color: rgb(255, 148, 61);
-    color: white;
-    
-    padding-top: 2px;
-    padding-bottom: 12px;
-    
+  text-align: center;
+  width: 100%;
+  background-color: var(--accent-color);
+  color: white;
+  padding-top: 2px;
+  padding-bottom: 12px;
 }
-
 
 .connect{
    margin: 20px;
     margin-bottom: 10px;
     font-size: 24px;
     
+}
+
+.colorPickerCon {
+  margin: 20px;
+  text-align: center;
+}
+
+.colorPickerCon label {
+  font-weight: bold;
+  margin-right: 10px;
 }
 
 
