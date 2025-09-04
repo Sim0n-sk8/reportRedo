@@ -4,188 +4,486 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Report 1</title>
-    <link rel="stylesheet" href="report1.css">
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #a3a2a2;
+            margin: 0;
+            padding: 20px 0;
+        }
+
+        .reportSize {
+            width: 630px;
+            max-width: 100%;
+            background-color: white;
+            border-top: 5px solid #ff943d;
+            margin: 0 auto;
+        }
+
+        .banner {
+            width: 100%;
+            height: 250px;
+            display: block;
+        }
+
+        .logo {
+            width: 40%;
+            max-width: 252px;
+            margin: 10px auto;
+            display: block;
+        }
+
+        .socials {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin: 0 1.5px 10px 1.5px;
+            vertical-align: middle;
+        }
+
+        .ratingCon {
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .head {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            margin: 0;
+        }
+
+        .subHead {
+            font-size: 11px;
+            margin: 0;
+            color: #666;
+        }
+
+        .starsCon {
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .stars {
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            padding: 2px;
+            margin: 0 1.5px 10px 1.5px;
+            vertical-align: middle;
+        }
+
+        .stars:nth-child(1) { background-color: #ffcaa3; }
+        .stars:nth-child(2) { background-color: #ffb885; }
+        .stars:nth-child(3) { background-color: #ffa666; }
+        .stars:nth-child(4) { background-color: #ff9447; }
+        .stars:nth-child(5) { background-color: #ff943d; }
+
+        .message {
+            font-size: 13px;
+            line-height: 1.5;
+            color: #333;
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 5px 15px;
+        }
+
+        .message p {
+            margin: 0 0 10px 0;
+        }
+
+        .creds {
+            width: 100%;
+            background-color: #f0eeee;
+            
+        }
+
+        .creds table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .optom {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            vertical-align: middle;
+        }
+
+        .credsText h3 {
+            margin: 0;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .credsText h4 {
+            margin: 2px 0;
+            font-size: 14px;
+            color: #555;
+            font-weight: normal;
+        }
+
+        .credsText p {
+            margin: 4px 0 0;
+            font-size: 12px;
+            color: #666;
+        }
+
+        .infoCon {
+            width: 90%;
+            margin: 20px auto;
+            border: 1px solid #9e9e9e;
+            border-radius: 20px;
+        }
+
+        .infoMod {
+            padding: 15px;
+        }
+
+        .infoMod:nth-child(odd) {
+            background-color: #f0eeee;
+        }
+
+        .infoMod:nth-child(even) {
+            background-color: #ffffff;
+        }
+
+        .infoMod:first-child {
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        .infoMod:last-child {
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+
+        .infoMod table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .infoImg {
+            width: 120px;
+            height: 120px;
+            border: 3px solid #fff;
+            border-radius: 15px;
+            vertical-align: top;
+        }
+
+        .infoText h3 {
+            margin: 5px 0 0 0;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .infoText p {
+            margin: 4px 0 0;
+            font-size: 12px;
+            color: #666;
+            line-height: 1.4;
+        }
+
+        .readBtn {
+            display: inline-block;
+            margin-top: 8px;
+            padding: 6px 12px;
+            background-color: #ff943d;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 15px;
+        }
+
+        .web {
+            text-align: center;
+            width: 100%;
+            background-color: #ff943d;
+            color: white;
+            padding: 20px 0 12px 0;
+        }
+
+        .connect {
+            margin: 0 0 25px 0;
+            font-size: 24px;
+        }
+
+        .footer {
+            padding: 20px;
+        }
+
+        .footer table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .contact {
+            vertical-align: top;
+        }
+
+        .contactItem {
+            margin-bottom: 5px;
+        }
+
+        .contactItem img {
+            width: 16px;
+            height: 16px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        .contactItem a {
+            font-size: 10px;
+            color: #666;
+            text-decoration: none;
+            vertical-align: middle;
+        }
+
+        .created {
+            text-align: right;
+            vertical-align: middle;
+        }
+
+        .created img {
+            width: auto;
+            height: 20px;
+        }
+
+        .unsubscribe {
+            text-align: center;
+            margin: 10px 0;
+            font-size: 7px;
+            color: #888;
+        }
+
+        .unsubscribe a {
+            color: #888;
+            text-decoration: none;
+            margin: 0 4px;
+        }
+
+        .unsubscribe a:hover {
+            text-decoration: underline;
+        }
+
+        /* Mobile responsiveness */
+        @media screen and (max-width: 650px) {
+            .reportSize {
+                width: 95% !important;
+            }
+            
+            .logo {
+                width: 60% !important;
+            }
+            
+            .banner {
+                height: 150px !important;
+            }
+            
+            .infoImg {
+                width: 80px !important;
+                height: 80px !important;
+            }
+            
+            .stars {
+                width: 35px !important;
+                height: 35px !important;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="reportSize">
-    
-    
-    
-    
-        <!--img-->
-        <img src="assets/logo2.png" alt="logo" class="logo">
+        <!-- Logo -->
+        <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/imageeyecare.png" alt="logo" class="logo">
 
-    
+        <!-- Banner -->
+        <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/banner.png" alt="Banner image" class="banner">
 
-
-    <!--banner-->
-    <img src="assets/banner.png" alt="Banner image" class="banner">
-
-
-     <!--ratings-->
-    <div class="ratingCon">
-        <p class="head">Rate And Review</p>
-        <p class="subHead">Share your experience to help others</p>
-        
-        <div class="starsCon">
-            <img src="assets/1str.png" alt="" class="stars">
-            <img src="assets/2str.png" alt="" class="stars">
-            <img src="assets/3str.png" alt="" class="stars">
-            <img src="assets/4str.png" alt="" class="stars">
-            <img src="assets/5str.png" alt="" class="stars">
-        </div>
-    </div>
-
-
-    <!--message-->
-    <div class="message">
-    <p>Dear ,</p>
-        <br>
-    <p>Thank you for visiting our practice. We value your support and trust you enjoyed your eye examination.</p>
-        <br>
-    <p>The following information will give you a better understanding of what was done during your consultation, specifically regarding your eye health and visual needs.</p>
-        <br>
-    <p>Your vision is important to us, please ensure the health of your eyes is examined regularly...</p>
-        <br>
-    <p>Kind Regards,</p>
-    </div>
-
-
-    <!--creds-->
-    <div class="creds">
-    <img src="assets/Optom.png" alt="Dr. Jacques Willemse" class="optom">
-
-    <div class="credsText">
-        <h3>Dr. Jacques Willemse</h3>
-        <h4>Optometrist</h4>
-        <p>B Optom (R.A.U.) | F.O.A. (S.A.) | CAS Boston (U.S.A.)</p>
-    </div>
-    </div>
-
-
-    
-
-
-
-    
-    <!--info mods-->
-    <!--scroll view-->
-    <div class="infoCon">
-        <div class="infoMod">
-            <img src="assets/myopia.jpg" alt="Short-sightedness" class="infoImg">
-
-            <!--myopia-->
-            <div class="infoText">
-                <h3>Short-sightedness</h3>
-                <p>
-                    Myopia or short-sightedness is a condition when distant objects focus short
-                    inside the eye, resulting in blurred distance vision. Myopia is not a disease
-                    and can be corrected with either spectacles or contact lenses.
-                </p>
-                <a href="https://your-link-here.com" class="readBtn">Read More</a>
+        <!-- Ratings -->
+        <div class="ratingCon">
+            <p class="head">Rate And Review</p>
+            <p class="subHead">Share your experience to help others</p>
+            
+            <div class="starsCon">
+                <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/1str.png" alt="1 star" class="stars">
+                <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/2str.png" alt="2 stars" class="stars">
+                <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/3str.png" alt="3 stars" class="stars">
+                <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/4str.png" alt="4 stars" class="stars">
+                <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/5str.png" alt="5 stars" class="stars">
             </div>
         </div>
 
-        <!--blue light-->
-        <div class="infoMod">
-            <img src="assets/lens_blue.jpg" alt="Short-sightedness" class="infoImg">
+        <!-- Message -->
+        <div class="message">
+            <p>Dear [Patient Name],</p>
+            <p>Thank you for visiting our practice. We value your support and trust you enjoyed your eye examination.</p>
+            <p>The following information will give you a better understanding of what was done during your consultation, specifically regarding your eye health and visual needs.</p>
+            <p>Your vision is important to us, please ensure the health of your eyes is examined regularly...</p>
+            <p>Kind Regards,</p>
+        </div>
 
-            <div class="infoText">
-                <h3>Blue light protective coating</h3>
-                <p>
-                    The purpose of a the blue light protective coating is to reduce the 
-                    harmful visual and health side effects emitted by blue light from 
-                    digital devices such as cellphones, tablets and LED screens.
-                </p>
-                <a href="https://your-link-here.com" class="readBtn">Read More</a>
+        <!-- Credentials -->
+        <div class="creds">
+            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tr>
+                    <td width="110" style="vertical-align: middle;">
+                        <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/Optom.png" alt="Dr. Jacques Willemse" class="optom">
+                    </td>
+                    <td style="vertical-align: middle;">
+                        <div class="credsText">
+                            <h3>Dr. Jacques Willemse</h3>
+                            <h4>Optometrist</h4>
+                            <p>B Optom (R.A.U.) | F.O.A. (S.A.) | CAS Boston (U.S.A.)</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Info Modules -->
+        <div class="infoCon">
+            <!-- Myopia -->
+            <div class="infoMod">
+                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                        <td width="140" style="vertical-align: top;">
+                            <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/myopia.jpg" alt="Short-sightedness" class="infoImg">
+                        </td>
+                        <td style="vertical-align: top; padding-left: 15px;">
+                            <div class="infoText">
+                                <h3>Short-sightedness</h3>
+                                <p>
+                                    Myopia or short-sightedness is a condition when distant objects focus short
+                                    inside the eye, resulting in blurred distance vision. Myopia is not a disease
+                                    and can be corrected with either spectacles or contact lenses.
+                                </p>
+                                <a href="https://your-link-here.com" class="readBtn">Read More</a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Blue light -->
+            <div class="infoMod">
+                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                        <td width="140" style="vertical-align: top;">
+                            <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/lens_blue.jpg" alt="Blue light coating" class="infoImg">
+                        </td>
+                        <td style="vertical-align: top; padding-left: 15px;">
+                            <div class="infoText">
+                                <h3>Blue light protective coating</h3>
+                                <p>
+                                    The purpose of a the blue light protective coating is to reduce the 
+                                    harmful visual and health side effects emitted by blue light from 
+                                    digital devices such as cellphones, tablets and LED screens.
+                                </p>
+                                <a href="https://your-link-here.com" class="readBtn">Read More</a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- General Eyecare -->
+            <div class="infoMod">
+                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                        <td width="140" style="vertical-align: top;">
+                            <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/gen_info.jpg" alt="General eyecare" class="infoImg">
+                        </td>
+                        <td style="vertical-align: top; padding-left: 15px;">
+                            <div class="infoText">
+                                <h3>General Eyecare info</h3>
+                                <p>
+                                    As 80% of the information processed in your lifetime is 
+                                    received through your eyes, this makes them the most 
+                                    important of all senses. This is our primary concern as 
+                                    your eye care practitioner.
+                                </p>
+                                <a href="https://your-link-here.com" class="readBtn">Read More</a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- MiSight -->
+            <div class="infoMod">
+                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                        <td width="140" style="vertical-align: top;">
+                            <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/misight.jpg" alt="MiSight contact lenses" class="infoImg">
+                        </td>
+                        <td style="vertical-align: top; padding-left: 15px;">
+                            <div class="infoText">
+                                <h3>MiSight® 1 day contact lenses</h3>
+                                <p>
+                                    MiSight® 1 day contact lenses with ActivControl® Technology 
+                                    are dual-purpose: they provide clear vision and help to 
+                                    control the worsening of myopia.
+                                </p>
+                                <a href="https://your-link-here.com" class="readBtn">Read More</a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
             </div>
         </div>
 
-        <!--General Eyecare info-->
-        <div class="infoMod">
-            <img src="assets/gen_info.jpg" alt="Short-sightedness" class="infoImg">
-
-            <div class="infoText">
-                <h3>General Eyecare info</h3>
-                <p>
-                    As 80% of the information processed in your lifetime is 
-                    received through your eyes, this makes them the most 
-                    important of all senses. This is our primary concern as 
-                    your eye care practitioner.
-                </p>
-                <a href="https://your-link-here.com" class="readBtn">Read More</a>
+        <!-- Social Media -->
+        <div class="web">
+            <h2 class="connect">Let's Connect!</h2>
+            <div style="text-align: center;">
+                <a href="index.html"><img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/wWeb.png" alt="Website" class="socials"></a>
+                <a href="#"><img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/wFace.png" alt="Facebook" class="socials"></a>
+                <a href="#"><img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/wInsta.png" alt="Instagram" class="socials"></a>
+                <a href="#"><img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/wlinkedIn.png" alt="LinkedIn" class="socials"></a>
+                <a href="#"><img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/wTwitter.png" alt="Twitter" class="socials"></a>
+                <a href="#"><img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/wTiktok.png" alt="TikTok" class="socials"></a>
+                <a href="#"><img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/wPintrest.png" alt="Pinterest" class="socials"></a>
+                <a href="report3.html"><img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/wGoogle.png" alt="Google" class="socials"></a>
             </div>
         </div>
 
-        <!--MiSight® 1 day contact lenses-->
-        <div class="infoMod">
-            <img src="assets/misight.jpg" alt="Short-sightedness" class="infoImg">
-
-            <div class="infoText">
-                <h3>MiSight® 1 day contact lenses</h3>
-                <p>
-                    MiSight® 1 day contact lenses with ActivControl® Technology 
-                    are dual-purpose: they provide clear vision and help to 
-                    control the worsening of myopia.
-
-                </p>
-                <a href="https://your-link-here.com" class="readBtn">Read More</a>
-            </div>
-        </div>
-        
-    </div>
-
-
-
-
-    <!--web-->
-    <div class="web">
-        <h2 class="connect">Let's Connect!</h2>
-        <div>
-            <a href="index.html"><img src="assets/wWeb.png" alt="" class="socials"></a>
-            <a href="#"><img src="assets/wFace.png" alt="" class="socials"></a>
-            <a href="#"><img src="assets/wInsta.png" alt="" class="socials"></a>
-            <a href="#"><img src="assets/wlinkedIn.png" alt="" class="socials"></a>
-            <a href="#"><img src="assets/wTwitter.png" alt="" class="socials"></a>
-            <a href="#"><img src="assets/wTiktok.png" alt="" class="socials"></a>
-            <a href="#"><img src="assets/wPintrest.png" alt="" class="socials"></a>
-            <a href="report3.html"><img src="assets/wGoogle.png" alt="" class="socials"></a>
-        </div>
-    </div>
-    
-
-    <!--other/footer-->
-    <div class="footer">
-    <div class="contact">
-            <div class="contactItem">
-                <img src="assets/emailfoot.png" alt="Email">
-                <a href="mailto:support@nevadacloud.com">support@nevadacloud.com</a>
-            </div>
-            <div class="contactItem">
-                <img src="assets/phonefoot.png" alt="Phone">
-                <a href="tel:+27418800051">+27 41 880 0051</a>
-            </div>
-            <div class="contactItem">
-                <img src="assets/websitefoot.png" alt="Website">
-                <a href="https://nevadacloud.com" target="_blank" rel="noopener noreferrer">https://nevadacloud.com</a>
-            </div>
+        <!-- Footer -->
+        <div class="footer">
+            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tr>
+                    <td class="contact" style="vertical-align: top;">
+                        <div class="contactItem">
+                            <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/emailfoot.png" alt="Email" style="width: 16px; height: 16px; vertical-align: middle; margin-right: 5px;">
+                            <a href="mailto:support@nevadacloud.com" style="font-size: 10px; color: #666; text-decoration: none; vertical-align: middle;">support@nevadacloud.com</a>
+                        </div>
+                        <div class="contactItem">
+                            <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/phonefoot.png" alt="Phone" style="width: 16px; height: 16px; vertical-align: middle; margin-right: 5px;">
+                            <a href="tel:+27418800051" style="font-size: 10px; color: #666; text-decoration: none; vertical-align: middle;">+27 41 880 0051</a>
+                        </div>
+                        <div class="contactItem">
+                            <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/websitefoot.png" alt="Website" style="width: 16px; height: 16px; vertical-align: middle; margin-right: 5px;">
+                            <a href="https://nevadacloud.com" style="font-size: 10px; color: #666; text-decoration: none; vertical-align: middle;">https://nevadacloud.com</a>
+                        </div>
+                    </td>
+                    <td class="created" style="text-align: right; vertical-align: middle;">
+                        <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/created.jpg" alt="Created" style="width: auto; height: 20px;">
+                    </td>
+                </tr>
+            </table>
         </div>
 
-    <div class="created">
-        <img src="assets/created.jpg" alt="Created">
+        <div class="unsubscribe">
+            <a href="#" style="color: #888; text-decoration: none;">Manage your preferences</a> | 
+            <a href="#" style="color: #888; text-decoration: none;">Unsubscribe</a>
+        </div>
     </div>
-    </div>
-
-     <div class="unsubscribe">
-        <a href="#">Manage your preferences</a> | 
-        <a href="#">Unsubscribe</a>
-    </div>
-
-
-
-
-    </div>
-
-
 </body>
 </html>
