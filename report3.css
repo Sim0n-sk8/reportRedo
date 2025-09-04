@@ -160,61 +160,89 @@ body{
 }
 
 
-.productGrid {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  gap: 8px;
-  justify-content: center;
-  margin: 20px auto;
+.infoCon {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border: 1px solid rgb(158, 158, 158);
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    
 }
 
-.productCard {
-  display: flex; 
-  flex-direction: row; 
-  border: 1px solid #a8a8a8;
-  border-radius: 8px;
-  overflow: hidden; 
-  width: 300px;  
-  background-color: #dbdbdb;
-  box-sizing: border-box;
+
+.infoMod {
+    display: flex;
+    align-items: flex-start;
+    padding: 15px 15px;
+    box-sizing: border-box;
+    
 }
 
-.productImg {
-  width: 150px;                
-  height: 100%;               
-  object-fit: cover;
-  display: block;
+
+.infoCon .infoMod:nth-child(odd) {
+    background-color: #f0eeee;
 }
 
-.productText {
-  flex: 1;                    
-  display: flex;
-  flex-direction: column;       
-  justify-content: space-between; 
-  padding: 10px;
+.infoCon .infoMod:nth-child(even) {
+    background-color: #ffffff;
 }
 
-.productText h3 {
-  margin: 0 0 5px 0;
-  font-size: 12px;
-  color: #333;
+.infoCon .infoMod:first-child {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
-.productText p {
-  margin: 0 0 10px 0;
-  font-size: 8px;
-  color: #666;
-  line-height: 1.4;
+.infoCon .infoMod:last-child {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
+
+
+
+
+
+.infoImg {
+    width: 120px;
+    height: 120px;
+    
+    border: 3px solid #fff;
+    margin-right: 15px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+
+.infoText h3 {
+    margin: 0;
+    margin-top: 5px;
+    font-size: 18px;
+    color: #333;
+}
+
+.infoText p {
+    margin: 4px 0 0;
+    font-size: 12px;
+    color: #666;
+    width: 85%;
+}
+
 
 .readBtn {
-  align-self: flex-start;      /* keeps button at start horizontally */
-  padding: 6px 12px;
-  background-color: var(--accent-color);
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
-  font-size:10px;
+    display: inline-block;
+    margin-top: 8px;
+    padding: 6px 12px;
+    background-color: var(--accent-color);
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 15px;
 }
 
 
