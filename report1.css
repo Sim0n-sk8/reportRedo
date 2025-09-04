@@ -20,7 +20,7 @@ body{
     width: 630px;
     
     background-color: white;
-    border-top: 5px solid orange;
+    border-top: 5px solid var(--accent-color);
    
 
 }
@@ -28,15 +28,14 @@ body{
 .banner{
     width: 100%;
    
-    height: 300px;
+    height: 250px;
 }
 
-.logo{
-    width: 35%;
+.logo {
+    width: 40%;
     z-index: 100;
-    margin: 10px;
-    margin-left: 20px;
-    
+    margin: 10px auto;  
+    display: block;   
 }
 
 .socials {
@@ -228,7 +227,7 @@ body{
     display: inline-block;
     margin-top: 8px;
     padding: 6px 12px;
-    background-color: orange;
+    background-color: var(--accent-color);
     color: #fff !important;
     text-decoration: none;
     border-radius: 4px;
@@ -261,31 +260,55 @@ body{
 .contact {
   display: flex;
   flex-direction: column;
-  gap: 5px; /* smaller space between email and phone */
+  gap: 5px; 
 }
 
 .contactItem {
   display: flex;
   align-items: center;
-  gap: 5px; /* smaller space between icon and text */
+  gap: 5px;
 }
 
 .contactItem img {
-  width: 16px; /* smaller icons */
+  width: 16px; 
   height: 16px;
 }
 
-.contactItem p {
-  margin: 0; /* remove default spacing */
+.contactItem a {
+  margin: 0; 
   font-size: 10px; 
-  color: #666;/* optional, adjust as needed */
+  color: #666;
+  text-decoration: none;
 }
+
+.created img {
+  width: auto;
+  height: 20px;
+}
+
 
 .created img {
   width: auto;
   height: 20px; /* adjust to match footer height */
 }
 
+.unsubscribe {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 7px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.unsubscribe a {
+  color: #888;
+  text-decoration: none;
+  margin: 0 4px;
+}
+
+.unsubscribe a:hover {
+  text-decoration: underline;
+}
 
 
 
