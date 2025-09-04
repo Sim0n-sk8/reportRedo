@@ -57,27 +57,28 @@ body{
 }
 
 .ratingCon {
-    width: fit-content;
-    margin: 5px auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 16px 24px;
+    padding-bottom: 10px;
+    padding-top: 10px;
   
-    border-radius: 8px;
+   
 }
 
 .head {
     font-size: 16px;
     font-weight: bold;
-    margin: 0 0 4px 0;
+    
+    
     color: #333;
 }
 
 .subHead {
     font-size: 11px;
-    margin: 0 0 12px 0;
+    margin-top: -6px;
     color: #666;
 }
 
@@ -85,12 +86,27 @@ body{
     display: flex;
     gap: 3px;
 
+    --baseColor: var(--accent-color); /* Your orange color */
+    --lightest: color-mix(in srgb, var(--baseColor) 55%, white 45%);
+    --lighter: color-mix(in srgb, var(--baseColor) 65%, white 35%);
+    --medium: color-mix(in srgb, var(--baseColor) 75%, white 25%);
+    --darker: color-mix(in srgb, var(--baseColor) 85%, white 15%);
+    --darkest: var(--baseColor);
 }
 
 .stars {
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    padding: 2px;
+    margin-bottom: 10px;
 }
+
+.starsCon .stars:nth-child(1) { background-color: var(--lightest); }
+.starsCon .stars:nth-child(2) { background-color: var(--lighter); }
+.starsCon .stars:nth-child(3) { background-color: var(--medium); }
+.starsCon .stars:nth-child(4) { background-color: var(--darker); }
+.starsCon .stars:nth-child(5) { background-color: var(--darkest); }
 
 .message {
     font-family: Arial, Helvetica, sans-serif;
