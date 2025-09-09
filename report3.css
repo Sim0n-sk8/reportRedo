@@ -552,5 +552,22 @@ body{
   margin-top: 0;
 }
 
+.modBtns {
+  display: flex;
+  flex-wrap: wrap;          /* allows wrapping to new lines */
+  justify-content: center;  /* keeps them centered */
+  gap: 8px;                 /* space between buttons */
+  padding: 10px 0;          /* breathing room */
+}
 
+.modBtns a {
+  background-color: var(--accent-color);
+  text-decoration: none;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 12px;
+  display: inline-block;    /* keeps button sizing neat */
+  white-space: nowrap;      /* prevents text breaking inside */
+}
 
