@@ -1,479 +1,594 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html>
 <head>
-  <!--[if gte mso 9]><xml><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]-->
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=1, user-scalable=yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Report 3</title>
-   <!--[if mso]>
+  <!--[if mso]>
   <style type="text/css">
     body, table, td {font-family: Arial, Helvetica, sans-serif !important;}
+    .mobile-table {width: 100% !important;}
+    .mobile-image {width: 100% !important; height: auto !important;}
+    .mobile-text {font-size: 16px !important;}
+    .mobile-button {width: 90% !important; max-width: 285px !important;}
   </style>
   <![endif]-->
-  <!--[if gte mso 9]>
-    <xml>
-      <o:OfficeDocumentSettings>
-        <o:AllowPNG/>
-        <o:PixelsPerInch>96</o:PixelsPerInch>
-      </o:OfficeDocumentSettings>
-    </xml>
-    <style type="text/css">
-      table, tr, td {border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;}
-      img {border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;}
-      p {margin: 0; padding: 0;}
-      /* Remove all borders and spacing in Outlook */
-      .button-td {border: none !important;}
-      .button-a {text-decoration: none !important;}
-      /* Remove spacing between table cells */
-      .spacer {font-size: 0; line-height: 0;}
-    </style>
-    <![endif]-->
+
+  <style type="text/css">
+    /* Mobile-first responsive styles */
+    @media only screen and (max-width: 630px) {
+      table[class="wrapper"] {
+        width: 100% !important;
+      }
+      td[class="mobile-full"] {
+        width: 100% !important;
+        display: block !important;
+      }
+      td[class="mobile-half"] {
+        width: 100% !important;
+        display: block !important;
+      }
+      img[class="mobile-image"] {
+        width: 100% !important;
+        height: auto !important;
+        max-width: 300px !important;
+      }
+      .mobile-text {
+        font-size: 16px !important;
+        line-height: 1.5 !important;
+      }
+      .mobile-button {
+        width: 90% !important;
+        max-width: 285px !important;
+        height: 44px !important;
+        line-height: 44px !important;
+        font-size: 16px !important;
+      }
+      .mobile-padding {
+        padding: 15px !important;
+      }
+      .mobile-center {
+        text-align: center !important;
+      }
+      .mobile-stack {
+        display: block !important;
+        width: 100% !important;
+      }
+    }
+    
+    body, table, td {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    a {
+      text-decoration: none;
+    }
+    img {
+      border: 0;
+      line-height: 100%;
+      outline: none;
+      text-decoration: none;
+      -ms-interpolation-mode: bicubic;
+    }
+  </style>
 </head>
 <body style="margin:0; padding:0; background-color:#a3a2a2; font-family:Arial, Helvetica, sans-serif;">
-  <table align="center" cellpadding="0" cellspacing="0" border="0" width="630" style="background-color:#ffffff; border-top:5px solid rgb(255,148,61);">
+  <!--[if mso]>
+  <style>
+    .mobile-table {width: 100% !important;}
+    .mobile-full {width: 100% !important; display: block !important;}
+    .mobile-half {width: 100% !important; display: block !important;}
+    .mobile-image {width: 100% !important; height: auto !important;}
+    .mobile-text {font-size: 16px !important;}
+    .mobile-button {width: 90% !important; max-width: 285px !important;}
+  </style>
+  <![endif]-->
+  
+  <table role="presentation" class="wrapper" align="center" cellpadding="0" cellspacing="0" border="0" width="630" style="background-color:#ffffff; border-top:5px solid rgb(255,148,61); max-width: 630px; width: 100%;">
+    <!-- Logo -->
     <tr>
-              <td align="center"  style="padding: 10px 0; font-family: Arial, Helvetica, sans-serif;" width="630">
-                <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/imageeyecare.png" alt="logo" width="252" height="auto" style="display: block; width: 40%; max-width: 252px; margin: 0 auto; padding: 0; font-family: Arial, Helvetica, sans-serif;" />
-              </td>
-            </tr>
+      <td class="mobile-full" align="center" style="padding: 15px 0; font-family: Arial, Helvetica, sans-serif;" width="630">
+        <img class="mobile-image" src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/imageeyecare.png" alt="logo" width="252" style="display: block; width: 40%; max-width: 252px; margin: 0 auto; padding: 0; font-family: Arial, Helvetica, sans-serif;" />
+      </td>
+    </tr>
+    
+    <!-- Banner -->
     <tr>
-      <td width="630" height="300">
-        <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/banner.png" alt="Banner image" width="630" height="300" style="display:block; width:100%; height:auto; max-width:630px; max-height:300px;" />
+      <td class="mobile-full" width="630">
+        <img class="mobile-image" src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/banner.png" alt="Banner image" width="630" height="300" style="display:block; width:100%; height:auto; max-width:630px;" />
       </td>
     </tr>
 
     <!-- Rating -->
     <tr>
-              <td align="center" style="padding: 10px 0; width: 630; font-family: Arial, Helvetica, sans-serif;">
-                <p style="margin: 0; padding: 0; font-size: 16px; font-weight: bold; color: #333; font-family: Arial, Helvetica, sans-serif;">Rate And Review</p>
-                <p style="margin: 0; padding: 0; font-size: 11px; color: #666; font-family: Arial, Helvetica, sans-serif;">Share your experience to help others</p>
-                <table cellpadding="0" cellspacing="0" border="0" width="300" height="auto" style="margin: 10px auto 10px auto; padding: 0; font-family: Arial, Helvetica, sans-serif; border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; line-height: 0; font-size: 0;">
-                  <tr>
-                    <td style="padding: 0; margin: 0; border: none; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; line-height: 0; font-size: 0;">
-                      <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/stars1.jpg" alt="1 star" width="60" height="60" style="display: block; margin: 0; padding: 0; border: none; outline: none; -ms-interpolation-mode: bicubic; width: 60px; height: 60px;">
-                    </td>
-                    <td style="padding: 0; margin: 0; border: none; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; line-height: 0; font-size: 0;">
-                      <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/stars2.jpg" alt="2 stars" width="60" height="60" style="display: block; margin: 0; padding: 0; border: none; outline: none; -ms-interpolation-mode: bicubic; width: 60px; height: 60px;">
-                    </td>
-                    <td style="padding: 0; margin: 0; border: none; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; line-height: 0; font-size: 0;">
-                      <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/stars3.jpg" alt="3 stars" width="60" height="60" style="display: block; margin: 0; padding: 0; border: none; outline: none; -ms-interpolation-mode: bicubic; width: 60px; height: 60px;">
-                    </td>
-                    <td style="padding: 0; margin: 0; border: none; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; line-height: 0; font-size: 0;">
-                      <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/stars4.jpg" alt="4 stars" width="60" height="60" style="display: block; margin: 0; padding: 0; border: none; outline: none; -ms-interpolation-mode: bicubic; width: 60px; height: 60px;">
-                    </td>
-                    <td style="padding: 0; margin: 0; border: none; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; line-height: 0; font-size: 0;">
-                      <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/stars5.jpg" alt="5 stars" width="60" height="60" style="display: block; margin: 0; padding: 0; border: none; outline: none; -ms-interpolation-mode: bicubic; width: 60px; height: 60px;">
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
+      <td class="mobile-full" align="center" style="padding: 15px 0; width: 630; font-family: Arial, Helvetica, sans-serif;">
+        <p class="mobile-text" style="margin: 0; padding: 0; font-size: 18px; font-weight: bold; color: #333; font-family: Arial, Helvetica, sans-serif;">Rate And Review</p>
+        <p class="mobile-text" style="margin: 0; padding: 0; font-size: 14px; color: #666; font-family: Arial, Helvetica, sans-serif;">Share your experience to help others</p>
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin: 15px auto;">
+          <tr>
+            <td style="padding: 2px;">
+              <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/stars1.jpg" alt="1 star" width="50" height="50" style="display: block;" />
+            </td>
+            <td style="padding: 2px;">
+              <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/stars2.jpg" alt="2 stars" width="50" height="50" style="display: block;" />
+            </td>
+            <td style="padding: 2px;">
+              <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/stars3.jpg" alt="3 stars" width="50" height="50" style="display: block;" />
+            </td>
+            <td style="padding: 2px;">
+              <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/stars4.jpg" alt="4 stars" width="50" height="50" style="display: block;" />
+            </td>
+            <td style="padding: 2px;">
+              <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/stars5.jpg" alt="5 stars" width="50" height="50" style="display: block;" />
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
 
     <!-- Message -->
     <tr>
-      <td style="padding:20px; font-size:13px; line-height:1.5; color:#333;" width="630">
-        <p style="margin:0 0 15px 0;">Dear ,</p>
-        <p style="margin:0 0 15px 0;">Thank you for visiting our practice. We value your support and trust you enjoyed your eye examination.</p>
-        <p style="margin:0 0 15px 0;">The following information will give you a better understanding of what was done during your consultation, specifically regarding your eye health and visual needs.</p>
-        <p style="margin:0 0 15px 0;">Your vision is important to us, please ensure the health of your eyes is examined regularly...</p>
-        <p style="margin:0;">Kind Regards,</p>
+      <td class="mobile-full" style="padding:20px; font-size:16px; line-height:1.6; color:#333;" width="630">
+        <p class="mobile-text" style="margin:0 0 15px 0;">Dear ,</p>
+        <p class="mobile-text" style="margin:0 0 15px 0;">Thank you for visiting our practice. We value your support and trust you enjoyed your eye examination.</p>
+        <p class="mobile-text" style="margin:0 0 15px 0;">The following information will give you a better understanding of what was done during your consultation, specifically regarding your eye health and visual needs.</p>
+        <p class="mobile-text" style="margin:0 0 15px 0;">Your vision is important to us, please ensure the health of your eyes is examined regularly...</p>
+        <p class="mobile-text" style="margin:0;">Kind Regards,</p>
       </td>
     </tr>
 
     <!-- Doctor -->
     <tr>
-      <td style="background-color:#f0eeee; padding:10px;" width="630">
-        <table cellpadding="0" cellspacing="0" border="0" width="100%" height="auto" style="border-collapse:collapse;">
+      <td class="mobile-full" style="background-color:#f0eeee; padding:15px;" width="630">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
           <tr>
-            <td width="110" align="center">
-              <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/sim.jpg" width="90" height="90" style="border-radius:50px; border:3px solid #fff; display:block;">
+            <td width="110" align="center" valign="top" style="padding:0;">
+              <!--[if mso]>
+              <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" 
+                xmlns:w="urn:schemas-microsoft-com:office:word"
+                arcsize="50%" 
+                strokecolor="#ffffff" 
+                strokeweight="3px" 
+                style="height:90px; width:90px; v-text-anchor:middle;">
+                <v:fill src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/sim.jpg" type="frame"/>
+                <w:wrap type="none"/>
+              </v:roundrect>
+              <![endif]-->
+              <!--[if !mso]><!-->
+              <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/sim.jpg" 
+                width="90" height="90" 
+                style="border-radius:50%; border:3px solid #fff; display:block;">
+              <!--<![endif]-->
             </td>
-            <td>
-              <h3 style="margin:0; font-size:18px; color:#333;">Dr. S.Swart</h3>
-              <h4 style="margin:2px 0 0 0; font-size:14px; color:#555; font-weight:normal;">Optometrist</h4>
-              <p style="margin:4px 0 0 0; font-size:12px; color:#666;">B Optom (R.A.U.) | F.O.A. (S.A.) | CAS Boston (U.S.A.)</p>
+            <td valign="middle" style="padding-left:15px;">
+              <h3 class="mobile-text" style="margin:0; font-size:20px; color:#333;">Dr. S.Swart</h3>
+              <h4 class="mobile-text" style="margin:5px 0 0 0; font-size:16px; color:#555; font-weight:normal;">Optometrist</h4>
+              <p class="mobile-text" style="margin:8px 0 0 0; font-size:14px; color:#666;">
+                B Optom (R.A.U.) | F.O.A. (S.A.) | CAS Boston (U.S.A.)
+              </p>
             </td>
           </tr>
         </table>
       </td>
     </tr>
 
-    <!-- Info Sections -->
+    <!-- Spacer -->
     <tr>
-      <td>
-        <table cellpadding="0" cellspacing="0" border="0" width="100%" height="auto" style="border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-          <!-- Refraction -->
-          <tr>
-            <td width="50%" valign="top" style="border-collapse: collapse; border: none; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0;">
-              <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/snellen.png" width="315" height="300" style="width:100%; max-width:315px; max-height:300px; display:block;">
-            </td>
-            <td width="50%" valign="top" style="height:300px; text-align:center; vertical-align:top;">
-              <h3 style="font-size:18px; color:#2c3e50; font-weight:600; margin:20px auto 8px auto; padding-bottom:6px; border-bottom:2px solid rgb(255,148,61); display:inline-block; line-height:1.3;">Why is my vision blurry?</h3>
-              <p style="font-size:12px; color:#4a5568; margin:0 auto 8px; max-width:90%; line-height:1.3; letter-spacing:0.1px;">Discover what might be affecting your vision. Select any condition below to learn more about your symptoms and solutions.</p>
-              <div style="text-align:center; width:100%;">
-                <table align="center" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-                  <tr>
-                    <td width="50%" valign="top" style="padding:5px 2px; border-collapse: collapse; border: none; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-                      <!-- Button 1 -->
-                      <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                        <tr>
-                          <td align="center" bgcolor="#FF943D" class="button-td" style="border-radius:6px; padding:6px 4px; border: none; mso-border-alt: none;">
-                            <a href="#" class="button-a" style="color:#ffffff; text-decoration:none; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; display:block;">Myopia</a>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                    <td width="50%" valign="top" style="padding:5px 2px; border-collapse: collapse; border: none; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-                      <!-- Button 2 -->
-                      <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                        <tr>
-                          <td align="center" bgcolor="#FF943D" class="button-td" style="border-radius:6px; padding:6px 4px; border: none; mso-border-alt: none;">
-                            <a href="#" class="button-a" style="color:#ffffff; text-decoration:none; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; display:block;">Astigmatism</a>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td width="50%" valign="top" style="padding:5px 2px; border-collapse: collapse; border: none; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-                      <!-- Button 3 -->
-                      <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                        <tr>
-                          <td align="center" bgcolor="#FF943D" class="button-td" style="border-radius:6px; padding:6px 4px; border: none; mso-border-alt: none;">
-                            <a href="#" class="button-a" style="color:#ffffff; text-decoration:none; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; display:block;">Presbyopia</a>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                    <td width="50%" valign="top" style="padding:5px 2px; border-collapse: collapse; border: none; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-                      <!-- Button 4 -->
-                      <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                        <tr>
-                          <td align="center" bgcolor="#FF943D" class="button-td" style="border-radius:6px; padding:6px 4px; border: none; mso-border-alt: none;">
-                            <a href="#" class="button-a" style="color:#ffffff; text-decoration:none; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; display:block;">Emmetropia</a>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-            </td>
-          </tr>
+      <td height="20" style="line-height:20px; font-size:0;">&nbsp;</td>
+    </tr>
 
-          <!-- Eye Health -->
+    <!-- Section 1: Refraction -->
+    <tr>
+      <td class="mobile-full">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
           <tr>
-            <td width="50%" valign="top" style="height:300px; text-align:center; vertical-align:top;">
-              <h3 style="font-size:18px; color:#2c3e50; font-weight:600; margin:20px auto 8px auto; padding-bottom:6px; border-bottom:2px solid rgb(255,148,61); display:inline-block; line-height:1.3;">Understanding Your Eye Health</h3>
-              <p style="font-size:12px; color:#4a5568; margin:0 auto 8px; max-width:90%; line-height:1.3; letter-spacing:0.1px;">Here's what we found during your examination. Select any condition to explore your results and recommendations.</p>
-              <div style="text-align:center; width:100%;">
-                <table align="center" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-                  <tr>
-                    <td width="50%" valign="top" style="padding:5px 2px; border-collapse: collapse; border: none; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-                      <!-- Button 1 -->
-                      <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                        <tr>
-                          <td align="center" bgcolor="#FF943D" class="button-td" style="border-radius:6px; padding:6px 4px; border: none; mso-border-alt: none;">
-                            <a href="#" class="button-a" style="color:#ffffff; text-decoration:none; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; display:block;">Blepharitis</a>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                    <td width="50%" valign="top" style="padding:5px 2px; border-collapse: collapse; border: none; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-                      <!-- Button 2 -->
-                      <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                        <tr>
-                          <td align="center" bgcolor="#FF943D" class="button-td" style="border-radius:6px; padding:6px 4px; border: none; mso-border-alt: none;">
-                            <a href="#" class="button-a" style="color:#ffffff; text-decoration:none; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; display:block;">Pinguecula</a>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td width="50%" valign="top" style="padding:5px 2px; border-collapse: collapse; border: none; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-                      <!-- Button 3 -->
-                      <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                        <tr>
-                          <td align="center" bgcolor="#FF943D" class="button-td" style="border-radius:6px; padding:6px 4px; border: none; mso-border-alt: none;">
-                            <a href="#" class="button-a" style="color:#ffffff; text-decoration:none; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; display:block;">Diabetic Retinopathy</a>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                    <td width="50%" valign="top" style="padding:5px 2px; border-collapse: collapse; border: none; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-                      <!-- Button 4 -->
-                      <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                        <tr>
-                          <td align="center" bgcolor="#FF943D" class="button-td" style="border-radius:6px; padding:6px 4px; border: none; mso-border-alt: none;">
-                            <a href="#" class="button-a" style="color:#ffffff; text-decoration:none; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; display:block;">Early Cataract</a>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td width="50%" valign="top" style="padding:5px 2px; border-collapse: collapse; border: none; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-                      <!-- Button 5 -->
-                      <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                        <tr>
-                          <td align="center" bgcolor="#FF943D" class="button-td" style="border-radius:6px; padding:6px 4px; border: none; mso-border-alt: none;">
-                            <a href="#" class="button-a" style="color:#ffffff; text-decoration:none; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; display:block;">Allergic Conjunctivitis</a>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                    <td width="50%" valign="top" style="padding:5px 2px; border-collapse: collapse; border: none; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-                      <!-- Button 6 -->
-                      <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                        <tr>
-                          <td align="center" bgcolor="#FF943D" class="button-td" style="border-radius:6px; padding:6px 4px; border: none; mso-border-alt: none;">
-                            <a href="#" class="button-a" style="color:#ffffff; text-decoration:none; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; display:block;">Pterygium</a>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td width="50%" valign="top" style="padding:5px 2px; border-collapse: collapse; border: none; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-                      <!-- Button 7 -->
-                      <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                        <tr>
-                          <td align="center" bgcolor="#FF943D" class="button-td" style="border-radius:6px; padding:6px 4px; border: none; mso-border-alt: none;">
-                            <a href="#" class="button-a" style="color:#ffffff; text-decoration:none; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; display:block;">Macular Degeneration</a>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                    <td width="50%" valign="top" style="padding:5px 2px; border-collapse: collapse; border: none; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-                      <!-- Button 8 -->
-                      <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                        <tr>
-                          <td align="center" bgcolor="#FF943D" class="button-td" style="border-radius:6px; padding:6px 4px; border: none; mso-border-alt: none;">
-                            <a href="#" class="button-a" style="color:#ffffff; text-decoration:none; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; display:block;">Vitreous Floaters</a>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </div>
+            <td class="mobile-half" width="315" valign="top" align="center">
+              <!--[if mso]>
+              <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" 
+                xmlns:w="urn:schemas-microsoft-com:office:word"
+                arcsize="10%" 
+                style="height:300px; width:300px;">
+                <v:fill src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/snellen.png" type="frame"/>
+                <w:wrap type="none"/>
+              </v:roundrect>
+              <![endif]-->
+              <!--[if !mso]><!-->
+              <img class="mobile-image" src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/snellen.png" width="300" height="300" style="width:100%; max-width:300px; border-radius:10%; display:block;">
+              <!--<![endif]-->
             </td>
-            <td width="50%" valign="top">
-              <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/phoropter.png" width="315" height="300" style="width:100%; max-width:315px; max-height:300px; display:block;">
-            </td>
-          </tr>
+            <td class="mobile-half" width="315" valign="top" style="padding-top:10px; text-align:center;">
+              <h3 class="mobile-text" style="font-size:18px; color:#2c3e50; font-weight:600; margin:0 auto 8px; padding-bottom:6px; border-bottom:2px solid rgb(255,148,61); display:inline-block;">Why is my vision blurry?</h3>
+              <p class="mobile-text" style="font-size:12px; color:#4a5568; margin:0 0 15px; line-height:1.4;">Discover what might be affecting your vision. Select any condition below to learn more.</p>
 
-          <!-- Treatment -->
-          <tr>
-            <td width="50%" valign="top">
-              <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/glasses.png" width="315" height="300" style="width:100%; max-width:315px; max-height:300px; display:block;">
-            </td>
-            <td width="50%" valign="top" style="height:300px; text-align:center; vertical-align:top;">
-              <h3 style="font-size:18px; color:#2c3e50; font-weight:600; margin:20px auto 8px auto; padding-bottom:6px; border-bottom:2px solid rgb(255,148,61); display:inline-block; line-height:1.3;">Your Vision Correction Options</h3>
-              <p style="font-size:12px; color:#4a5568; margin:0 auto 8px; max-width:90%; line-height:1.3; letter-spacing:0.1px;">Explore your personalized treatment recommendations. Each option is tailored to your specific vision needs.</p>
-              <div style="text-align:center; width:100%;">
-                <table align="center" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-                  <tr>
-                    <td width="50%" valign="top" style="padding:5px 2px; border-collapse: collapse; border: none; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-                      <!-- Button 1 -->
-                      <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                        <tr>
-                          <td align="center" bgcolor="#FF943D" class="button-td" style="border-radius:6px; padding:6px 4px; border: none; mso-border-alt: none;">
-                            <a href="#" class="button-a" style="color:#ffffff; text-decoration:none; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; display:block;">Single Vision</a>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                    <td width="50%" valign="top" style="padding:5px 2px; border-collapse: collapse; border: none; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-                      <!-- Button 2 -->
-                      <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                        <tr>
-                          <td align="center" bgcolor="#FF943D" class="button-td" style="border-radius:6px; padding:6px 4px; border: none; mso-border-alt: none;">
-                            <a href="#" class="button-a" style="color:#ffffff; text-decoration:none; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; display:block;">Bifocal</a>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td width="50%" valign="top" style="padding:5px 2px; border-collapse: collapse; border: none; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-                      <!-- Button 3 -->
-                      <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                        <tr>
-                          <td align="center" bgcolor="#FF943D" class="button-td" style="border-radius:6px; padding:6px 4px; border: none; mso-border-alt: none;">
-                            <a href="#" class="button-a" style="color:#ffffff; text-decoration:none; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; display:block;">Hri</a>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                    <td width="50%" valign="top" style="padding:5px 2px; border-collapse: collapse; border: none; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-                      <!-- Button 4 -->
-                      <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                        <tr>
-                          <td align="center" bgcolor="#FF943D" class="button-td" style="border-radius:6px; padding:6px 4px; border: none; mso-border-alt: none;">
-                            <a href="#" class="button-a" style="color:#ffffff; text-decoration:none; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; display:block;">Polarisation</a>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td width="50%" valign="top" style="padding:5px 2px; border-collapse: collapse; border: none; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-                      <!-- Button 5 -->
-                      <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                        <tr>
-                          <td align="center" bgcolor="#FF943D" class="button-td" style="border-radius:6px; padding:6px 4px; border: none; mso-border-alt: none;">
-                            <a href="#" class="button-a" style="color:#ffffff; text-decoration:none; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; display:block;">Blue Protection Coating</a>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                    
-                  </tr>
-                </table>
-              </div>
-            </td>
-          </tr>
-
-          <!-- General Info -->
-          <tr>
-            <td width="50%" valign="top" style="height:300px; text-align:center; vertical-align:top;">
-              <h3 style="font-size:18px; color:#2c3e50; font-weight:600; margin:20px auto 8px auto; padding-bottom:6px; border-bottom:2px solid rgb(255,148,61); display:inline-block; line-height:1.3;">Eye Care Resources</h3>
-              <p style="font-size:12px; color:#4a5568; margin:0 auto 8px; max-width:90%; line-height:1.3; letter-spacing:0.1px;">Valuable information to help maintain and protect your vision. Select any topic to learn more.</p>
-              <div style="text-align:center; width:100%;">
-                <table align="center" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-                  <tr>
-                    <td width="50%" valign="top" style="padding:5px 2px; border-collapse: collapse; border: none; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-                      <!-- Button 1 -->
-                      <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                        <tr>
-                          <td align="center" bgcolor="#FF943D" class="button-td" style="border-radius:6px; padding:6px 4px; border: none; mso-border-alt: none;">
-                            <a href="#" class="button-a" style="color:#ffffff; text-decoration:none; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; display:block;">Safety</a>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                    <td width="50%" valign="top" style="padding:5px 2px; border-collapse: collapse; border: none; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-                      <!-- Button 2 -->
-                      <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                        <tr>
-                          <td align="center" bgcolor="#FF943D" class="button-td" style="border-radius:6px; padding:6px 4px; border: none; mso-border-alt: none;">
-                            <a href="#" class="button-a" style="color:#ffffff; text-decoration:none; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; display:block;">UV protection</a>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td width="50%" valign="top" style="padding:5px 2px; border-collapse: collapse; border: none; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-                      <!-- Button 3 -->
-                      <table width="100%" cellpadding="0" cellspacing="0" border="0">
-                        <tr>
-                          <td align="center" bgcolor="#FF943D" class="button-td" style="border-radius:6px; padding:6px 4px; border: none; mso-border-alt: none;">
-                            <a href="#" class="button-a" style="color:#ffffff; text-decoration:none; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; display:block;">Healthy Eyes</a>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                    
-                  </tr>
-                </table>
-              </div>
-            </td>
-            <td width="50%" valign="top">
-              <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/general.png" width="315" height="300" style="width:100%; max-width:315px; max-height:300px; display:block;">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tr>
+                  <td style="padding:4px 0;" align="center">
+                    <!--[if mso]>
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="#" style="height:40px; v-text-anchor:middle; width:285px;" arcsize="15%" strokecolor="#FF943D" fillcolor="#FF943D">
+                      <w:anchorlock/>
+                      <center style="color:#ffffff; font-family:Arial, Helvetica, sans-serif; font-size:14px;">Myopia</center>
+                    </v:roundrect>
+                    <![endif]-->
+                    <!--[if !mso]><!-->
+                    <a href="#" class="mobile-button" style="display:inline-block; width:90%; max-width:285px; background-color:#FF943D; color:#ffffff; text-decoration:none; font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:40px; border-radius:6px;">Myopia</a>
+                    <!--<![endif]-->
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:4px 0;" align="center">
+                    <!--[if mso]>
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="#" style="height:40px; v-text-anchor:middle; width:285px;" arcsize="15%" strokecolor="#FF943D" fillcolor="#FF943D">
+                      <w:anchorlock/>
+                      <center style="color:#ffffff; font-family:Arial, Helvetica, sans-serif; font-size:14px;">Astigmatism</center>
+                    </v:roundrect>
+                    <![endif]-->
+                    <!--[if !mso]><!-->
+                    <a href="#" class="mobile-button" style="display:inline-block; width:90%; max-width:285px; background-color:#FF943D; color:#ffffff; text-decoration:none; font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:40px; border-radius:6px;">Astigmatism</a>
+                    <!--<![endif]-->
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:4px 0;" align="center">
+                    <!--[if mso]>
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="#" style="height:40px; v-text-anchor:middle; width:285px;" arcsize="15%" strokecolor="#FF943D" fillcolor="#FF943D">
+                      <w:anchorlock/>
+                      <center style="color:#ffffff; font-family:Arial, Helvetica, sans-serif; font-size:14px;">Presbyopia</center>
+                    </v:roundrect>
+                    <![endif]-->
+                    <!--[if !mso]><!-->
+                    <a href="#" class="mobile-button" style="display:inline-block; width:90%; max-width:285px; background-color:#FF943D; color:#ffffff; text-decoration:none; font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:40px; border-radius:6px;">Presbyopia</a>
+                    <!--<![endif]-->
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:4px 0;" align="center">
+                    <!--[if mso]>
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="#" style="height:40px; v-text-anchor:middle; width:285px;" arcsize="15%" strokecolor="#FF943D" fillcolor="#FF943D">
+                      <w:anchorlock/>
+                      <center style="color:#ffffff; font-family:Arial, Helvetica, sans-serif; font-size:14px;">Emmetropia</center>
+                    </v:roundrect>
+                    <![endif]-->
+                    <!--[if !mso]><!-->
+                    <a href="#" class="mobile-button" style="display:inline-block; width:90%; max-width:285px; background-color:#FF943D; color:#ffffff; text-decoration:none; font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:40px; border-radius:6px;">Emmetropia</a>
+                    <!--<![endif]-->
+                  </td>
+                </tr>
+              </table>
             </td>
           </tr>
         </table>
       </td>
     </tr>
 
+    <!-- Section 2: Eye Health -->
+    <tr>
+      <td class="mobile-full">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+          <tr>
+            <td class="mobile-half" width="315" valign="top" style="padding-top:10px; text-align:center;">
+              <h3 class="mobile-text" style="font-size:18px; color:#2c3e50; font-weight:600; margin:0 auto 8px; padding-bottom:6px; border-bottom:2px solid rgb(255,148,61); display:inline-block;">Understanding Your Eye Health</h3>
+              <p class="mobile-text" style="font-size:12px; color:#4a5568; margin:0 0 15px; line-height:1.4;">Here's what we found during your examination. Select any condition to explore your results.</p>
+
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tr>
+                  <td style="padding:4px 0;" align="center">
+                    <!--[if mso]>
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="#" style="height:40px; v-text-anchor:middle; width:285px;" arcsize="15%" strokecolor="#FF943D" fillcolor="#FF943D">
+                      <w:anchorlock/>
+                      <center style="color:#ffffff; font-family:Arial, Helvetica, sans-serif; font-size:14px;">Blepharitis</center>
+                    </v:roundrect>
+                    <![endif]-->
+                    <!--[if !mso]><!-->
+                    <a href="#" class="mobile-button" style="display:inline-block; width:90%; max-width:285px; background-color:#FF943D; color:#ffffff; text-decoration:none; font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:40px; border-radius:6px;">Blepharitis</a>
+                    <!--<![endif]-->
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:4px 0;" align="center">
+                    <!--[if mso]>
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="#" style="height:40px; v-text-anchor:middle; width:285px;" arcsize="15%" strokecolor="#FF943D" fillcolor="#FF943D">
+                      <w:anchorlock/>
+                      <center style="color:#ffffff; font-family:Arial, Helvetica, sans-serif; font-size:14px;">Pinguecula</center>
+                    </v:roundrect>
+                    <![endif]-->
+                    <!--[if !mso]><!-->
+                    <a href="#" class="mobile-button" style="display:inline-block; width:90%; max-width:285px; background-color:#FF943D; color:#ffffff; text-decoration:none; font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:40px; border-radius:6px;">Pinguecula</a>
+                    <!--<![endif]-->
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:4px 0;" align="center">
+                    <!--[if mso]>
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="#" style="height:40px; v-text-anchor:middle; width:285px;" arcsize="15%" strokecolor="#FF943D" fillcolor="#FF943D">
+                      <w:anchorlock/>
+                      <center style="color:#ffffff; font-family:Arial, Helvetica, sans-serif; font-size:14px;">Diabetic Retinopathy</center>
+                    </v:roundrect>
+                    <![endif]-->
+                    <!--[if !mso]><!-->
+                    <a href="#" class="mobile-button" style="display:inline-block; width:90%; max-width:285px; background-color:#FF943D; color:#ffffff; text-decoration:none; font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:40px; border-radius:6px;">Diabetic Retinopathy</a>
+                    <!--<![endif]-->
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:4px 0;" align="center">
+                    <!--[if mso]>
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="#" style="height:40px; v-text-anchor:middle; width:285px;" arcsize="15%" strokecolor="#FF943D" fillcolor="#FF943D">
+                      <w:anchorlock/>
+                      <center style="color:#ffffff; font-family:Arial, Helvetica, sans-serif; font-size:14px;">Early Cataract</center>
+                    </v:roundrect>
+                    <![endif]-->
+                    <!--[if !mso]><!-->
+                    <a href="#" class="mobile-button" style="display:inline-block; width:90%; max-width:285px; background-color:#FF943D; color:#ffffff; text-decoration:none; font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:40px; border-radius:6px;">Early Cataract</a>
+                    <!--<![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td class="mobile-half" width="315" valign="top" align="center">
+              <!--[if mso]>
+              <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" 
+                xmlns:w="urn:schemas-microsoft-com:office:word"
+                arcsize="10%" 
+                style="height:300px; width:300px;">
+                <v:fill src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/phoropter.png" type="frame"/>
+                <w:wrap type="none"/>
+              </v:roundrect>
+              <![endif]-->
+              <!--[if !mso]><!-->
+              <img class="mobile-image" src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/phoropter.png" width="300" height="300" style="width:100%; max-width:300px; border-radius:10%; display:block;">
+              <!--<![endif]-->
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- Section 3: Treatment -->
+    <tr>
+      <td class="mobile-full">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+          <tr>
+            <td class="mobile-half" width="315" valign="top" align="center">
+              <!--[if mso]>
+              <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" 
+                xmlns:w="urn:schemas-microsoft-com:office:word"
+                arcsize="10%" 
+                style="height:300px; width:300px;">
+                <v:fill src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/glasses.png" type="frame"/>
+                <w:wrap type="none"/>
+              </v:roundrect>
+              <![endif]-->
+              <!--[if !mso]><!-->
+              <img class="mobile-image" src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/glasses.png" width="300" height="300" style="width:100%; max-width:300px; border-radius:10%; display:block;">
+              <!--<![endif]-->
+            </td>
+            <td class="mobile-half" width="315" valign="top" style="padding-top:10px; text-align:center;">
+              <h3 class="mobile-text" style="font-size:18px; color:#2c3e50; font-weight:600; margin:0 auto 8px; padding-bottom:6px; border-bottom:2px solid rgb(255,148,61); display:inline-block;">Your Vision Correction Options</h3>
+              <p class="mobile-text" style="font-size:12px; color:#4a5568; margin:0 0 15px; line-height:1.4;">Explore your personalized treatment recommendations tailored to your specific vision needs.</p>
+
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tr>
+                  <td style="padding:4px 0;" align="center">
+                    <!--[if mso]>
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="#" style="height:40px; v-text-anchor:middle; width:285px;" arcsize="15%" strokecolor="#FF943D" fillcolor="#FF943D">
+                      <w:anchorlock/>
+                      <center style="color:#ffffff; font-family:Arial, Helvetica, sans-serif; font-size:14px;">Single Vision</center>
+                    </v:roundrect>
+                    <![endif]-->
+                    <!--[if !mso]><!-->
+                    <a href="#" class="mobile-button" style="display:inline-block; width:90%; max-width:285px; background-color:#FF943D; color:#ffffff; text-decoration:none; font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:40px; border-radius:6px;">Single Vision</a>
+                    <!--<![endif]-->
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:4px 0;" align="center">
+                    <!--[if mso]>
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="#" style="height:40px; v-text-anchor:middle; width:285px;" arcsize="15%" strokecolor="#FF943D" fillcolor="#FF943D">
+                      <w:anchorlock/>
+                      <center style="color:#ffffff; font-family:Arial, Helvetica, sans-serif; font-size:14px;">Bifocal</center>
+                    </v:roundrect>
+                    <![endif]-->
+                    <!--[if !mso]><!-->
+                    <a href="#" class="mobile-button" style="display:inline-block; width:90%; max-width:285px; background-color:#FF943D; color:#ffffff; text-decoration:none; font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:40px; border-radius:6px;">Bifocal</a>
+                    <!--<![endif]-->
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:4px 0;" align="center">
+                    <!--[if mso]>
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="#" style="height:40px; v-text-anchor:middle; width:285px;" arcsize="15%" strokecolor="#FF943D" fillcolor="#FF943D">
+                      <w:anchorlock/>
+                      <center style="color:#ffffff; font-family:Arial, Helvetica, sans-serif; font-size:14px;">Hri</center>
+                    </v:roundrect>
+                    <![endif]-->
+                    <!--[if !mso]><!-->
+                    <a href="#" class="mobile-button" style="display:inline-block; width:90%; max-width:285px; background-color:#FF943D; color:#ffffff; text-decoration:none; font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:40px; border-radius:6px;">Hri</a>
+                    <!--<![endif]-->
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:4px 0;" align="center">
+                    <!--[if mso]>
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="#" style="height:40px; v-text-anchor:middle; width:285px;" arcsize="15%" strokecolor="#FF943D" fillcolor="#FF943D">
+                      <w:anchorlock/>
+                      <center style="color:#ffffff; font-family:Arial, Helvetica, sans-serif; font-size:14px;">Polarisation</center>
+                    </v:roundrect>
+                    <![endif]-->
+                    <!--[if !mso]><!-->
+                    <a href="#" class="mobile-button" style="display:inline-block; width:90%; max-width:285px; background-color:#FF943D; color:#ffffff; text-decoration:none; font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:40px; border-radius:6px;">Polarisation</a>
+                    <!--<![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- Section 4: General Info -->
+    <tr>
+      <td class="mobile-full">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+          <tr>
+            <td class="mobile-half" width="315" valign="top" style="padding-top:10px; text-align:center;">
+              <h3 class="mobile-text" style="font-size:18px; color:#2c3e50; font-weight:600; margin:0 auto 8px; padding-bottom:6px; border-bottom:2px solid rgb(255,148,61); display:inline-block;">Eye Care Resources</h3>
+              <p class="mobile-text" style="font-size:12px; color:#4a5568; margin:0 0 15px; line-height:1.4;">Valuable information to help maintain and protect your vision. Select any topic to learn more.</p>
+
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tr>
+                  <td style="padding:4px 0;" align="center">
+                    <!--[if mso]>
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="#" style="height:40px; v-text-anchor:middle; width:285px;" arcsize="15%" strokecolor="#FF943D" fillcolor="#FF943D">
+                      <w:anchorlock/>
+                      <center style="color:#ffffff; font-family:Arial, Helvetica, sans-serif; font-size:14px;">General Eyecare</center>
+                    </v:roundrect>
+                    <![endif]-->
+                    <!--[if !mso]><!-->
+                    <a href="#" class="mobile-button" style="display:inline-block; width:90%; max-width:285px; background-color:#FF943D; color:#ffffff; text-decoration:none; font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:40px; border-radius:6px;">General Eyecare</a>
+                    <!--<![endif]-->
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:4px 0;" align="center">
+                    <!--[if mso]>
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="#" style="height:40px; v-text-anchor:middle; width:285px;" arcsize="15%" strokecolor="#FF943D" fillcolor="#FF943D">
+                      <w:anchorlock/>
+                      <center style="color:#ffffff; font-family:Arial, Helvetica, sans-serif; font-size:14px;">Myopia Management</center>
+                    </v:roundrect>
+                    <![endif]-->
+                    <!--[if !mso]><!-->
+                    <a href="#" class="mobile-button" style="display:inline-block; width:90%; max-width:285px; background-color:#FF943D; color:#ffffff; text-decoration:none; font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:40px; border-radius:6px;">Myopia Management</a>
+                    <!--<![endif]-->
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:4px 0;" align="center">
+                    <!--[if mso]>
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="#" style="height:40px; v-text-anchor:middle; width:285px;" arcsize="15%" strokecolor="#FF943D" fillcolor="#FF943D">
+                      <w:anchorlock/>
+                      <center style="color:#ffffff; font-family:Arial, Helvetica, sans-serif; font-size:14px;">Screen Time & Device Tips</center>
+                    </v:roundrect>
+                    <![endif]-->
+                    <!--[if !mso]><!-->
+                    <a href="#" class="mobile-button" style="display:inline-block; width:90%; max-width:285px; background-color:#FF943D; color:#ffffff; text-decoration:none; font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:40px; border-radius:6px;">Screen Time & Device Tips</a>
+                    <!--<![endif]-->
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:4px 0;" align="center">
+                    <!--[if mso]>
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="#" style="height:40px; v-text-anchor:middle; width:285px;" arcsize="15%" strokecolor="#FF943D" fillcolor="#FF943D">
+                      <w:anchorlock/>
+                      <center style="color:#ffffff; font-family:Arial, Helvetica, sans-serif; font-size:14px;">UV Protection</center>
+                    </v:roundrect>
+                    <![endif]-->
+                    <!--[if !mso]><!-->
+                    <a href="#" class="mobile-button" style="display:inline-block; width:90%; max-width:285px; background-color:#FF943D; color:#ffffff; text-decoration:none; font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:40px; border-radius:6px;">UV Protection</a>
+                    <!--<![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td class="mobile-half" width="315" valign="top" align="center">
+              <!--[if mso]>
+              <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" 
+                xmlns:w="urn:schemas-microsoft-com:office:word"
+                arcsize="10%" 
+                style="height:300px; width:300px;">
+                <v:fill src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/general.png" type="frame"/>
+                <w:wrap type="none"/>
+              </v:roundrect>
+              <![endif]-->
+              <!--[if !mso]><!-->
+              <img class="mobile-image" src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/general.png" width="300" height="300" style="width:100%; max-width:300px; border-radius:10%; display:block;">
+              <!--<![endif]-->
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr>
+      <td height="20" style="line-height:20px; font-size:0;">&nbsp;</td>
+    </tr>
 
     <!-- Connect -->
-            <tr>
-              <td style="background-color: #ff943d; height: 125px;  text-align: center; font-family: Arial, Helvetica, sans-serif; color: #ffffff;" width="630">
-                <h2 style="margin: 0 0 15px 0; padding: 0; font-size: 24px; font-family: Arial, Helvetica, sans-serif;">Let's Connect!</h2>
-                <table cellpadding="0" cellspacing="0" border="0" align="center" style="margin: 0 auto; font-family: Arial, Helvetica, sans-serif;">
-                  <tr>
-                    <td style="padding: 0 5px;">
-                      <a href="index.html" style="display: inline-block;">
-                        <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/wWeb.png" alt="Website" width="35" height="35" style="vertical-align:middle; margin-right:5px;" />
-                      </a>
-                    </td>
-                    <td style="padding: 0 5px;">
-                      <a href="#" style="display: inline-block;">
-                        <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/wFace.png" alt="Facebook" width="35" height="35" style="vertical-align:middle; margin-right:5px;" />
-                      </a>
-                    </td>
-                    <td style="padding: 0 5px;">
-                      <a href="#" style="display: inline-block;">
-                        <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/wInsta.png" alt="Instagram" width="35" height="35" style="vertical-align:middle; margin-right:5px;" />
-                      </a>
-                    </td>
-                    <td style="padding: 0 5px;">
-                      <a href="#" style="display: inline-block;">
-                        <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/wlinkedIn.png" alt="LinkedIn" width="35" height="35" style="vertical-align:middle; margin-right:5px;" />
-                      </a>
-                    </td>
-                    <td style="padding: 0 5px;">
-                      <a href="#" style="display: inline-block;">
-                        <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/wTwitter.png" alt="Twitter" width="35" height="35" style="vertical-align:middle; margin-right:5px;" />
-                      </a>
-                    </td>
-                    <td style="padding: 0 5px;">
-                      <a href="#" style="display: inline-block;">
-                        <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/wTiktok.png" alt="TikTok" width="35" height="35" style="vertical-align:middle; margin-right:5px;" />
-                      </a>
-                    </td>
-                    <td style="padding: 0 5px;">
-                      <a href="#" style="display: inline-block;">
-                        <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/wPintrest.png" alt="Pinterest" width="35" height="35" style="vertical-align:middle; margin-right:5px;" />
-                      </a>
-                    </td>
-                    <td style="padding: 0 5px;">
-                      <a href="report3.html" style="display: inline-block;">
-                        <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/wGoogle.png" alt="Google" width="35" height="35" style="vertical-align:middle; margin-right:5px;" />
-                      </a>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
+    <tr>
+      <td class="mobile-full" style="background-color: #ff943d; padding: 20px 0; text-align: center; font-family: Arial, Helvetica, sans-serif; color: #ffffff;" width="630">
+        <h2 class="mobile-text" style="margin: 0 0 20px 0; padding: 0; font-size: 24px; font-family: Arial, Helvetica, sans-serif;">Let's Connect!</h2>
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin: 0 auto;">
+          <tr>
+            <td style="padding: 0 5px;">
+              <a href="index.html">
+                <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/wWeb.png" alt="Website" width="40" height="40" style="display:block;" />
+              </a>
+            </td>
+            <td style="padding: 0 5px;">
+              <a href="#">
+                <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/wFace.png" alt="Facebook" width="40" height="40" style="display:block;" />
+              </a>
+            </td>
+            <td style="padding: 0 5px;">
+              <a href="#">
+                <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/wInsta.png" alt="Instagram" width="40" height="40" style="display:block;" />
+              </a>
+            </td>
+            <td style="padding: 0 5px;">
+              <a href="#">
+                <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/wlinkedIn.png" alt="LinkedIn" width="40" height="40" style="display:block;" />
+              </a>
+            </td>
+            <td style="padding: 0 5px;">
+              <a href="#">
+                <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/wTwitter.png" alt="Twitter" width="40" height="40" style="display:block;" />
+              </a>
+            </td>
+            <td style="padding: 0 5px;">
+              <a href="#">
+                <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/wTiktok.png" alt="TikTok" width="40" height="40" style="display:block;" />
+              </a>
+            </td>
+            <td style="padding: 0 5px;">
+              <a href="#">
+                <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/wPintrest.png" alt="Pinterest" width="40" height="40" style="display:block;" />
+              </a>
+            </td>
+            <td style="padding: 0 5px;">
+              <a href="report3.html">
+                <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/wGoogle.png" alt="Google" width="40" height="40" style="display:block;" />
+              </a>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
 
     <!-- Footer -->
     <tr>
-      <td style="padding:20px; font-size:10px; color:#666;" width="630">
-        <table width="100%" cellpadding="5" cellspacing="0" border="0" style="border-collapse: collapse; border-spacing: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+      <td class="mobile-full" style="padding:20px; font-size:14px; color:#666;" width="630">
+        <table role="presentation" width="100%" cellpadding="5" cellspacing="0" border="0">
           <tr>
-            <td valign="top" style="font-size:10px; color:#666;">
+            <td class="mobile-stack" valign="top" style="font-size:14px; color:#666;">
               <p style="margin:0;">
-                <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/emailfoot.png" width="16" height="16" style="vertical-align:middle; margin-right:5px;">
-                <a href="mailto:support@nevadacloud.com" style="color:#666; text-decoration:none;">support@nevadacloud.com</a>
+                <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/emailfoot.png" width="18" height="18" style="vertical-align:middle; margin-right:5px;">
+                <a href="mailto:support@nevadacloud.com" style="color:#666; text-decoration:none; vertical-align:middle; font-size:14px;">support@nevadacloud.com</a>
               </p>
-
-
-
-
-
-              
-              <p style="margin:5px 0 0 0;">
-                <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/phonefoot.png" width="16" height="16" style="vertical-align:middle; margin-right:5px;">
-                <a href="tel:+27418800051" style="color:#666; text-decoration:none;">+27 41 880 0051</a>
+              <p style="margin:10px 0 0 0;">
+                <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/phonefoot.png" width="18" height="18" style="vertical-align:middle; margin-right:5px;">
+                <a href="tel:+27418800051" style="color:#666; text-decoration:none; vertical-align:middle; font-size:14px;">+27 41 880 0051</a>
               </p>
-              <p style="margin:5px 0 0 0;">
-                <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/websitefoot.png" width="16" height="16" style="vertical-align:middle; margin-right:5px;">
-                <a href="https://nevadacloud.com/" style="color:#666; text-decoration:none;" target="_blank">https://nevadacloud.com/</a>
+              <p style="margin:10px 0 0 0;">
+                <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/websitefoot.png" width="18" height="18" style="vertical-align:middle; margin-right:5px;">
+                <a href="https://nevadacloud.com/" style="color:#666; text-decoration:none; vertical-align:middle; font-size:14px;" target="_blank">https://nevadacloud.com/</a>
               </p>
             </td>
-            <td align="right" valign="middle">
-              <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/created.jpg" alt="Created" style="height:20px;">
+            <td class="mobile-stack" align="center" valign="middle" style="padding-top: 15px;">
+              <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/created.jpg" alt="Created" style="height:25px;">
             </td>
           </tr>
         </table>
       </td>
     </tr>
-
   </table>
 </body>
 </html>
