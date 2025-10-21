@@ -3,39 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
   <title>Report 3</title>
- 
+ <style type="text/css">
+
+
+  /* * MEDIA QUERY FOR ALL OTHER CLIENTS 
+   * (Gmail, Apple Mail, Outlook Mobile, etc.)
+   */
+  @media only screen and (max-width: 680px) {
+    .mobile-full {
+      display: block !important;
+      width: 100% !important;
+    }
+
+    .sect-full {
+      display: block !important;
+      width: 100% !important;
+      text-align: center !important;
+    }
+
+    .mobile-half {
+      display: inline-block !important;
+      width: 45% !important;
+      max-width: 45% !important;
+      padding: 10px 0 !important;
+      margin: 5px; 
+      vertical-align: middle !important;
+    }
+
+    .mobile-half img {
+      display: block !important;
+      width: 80% !important;
+      max-width: 80% !important;
+      height: auto !important;
+      margin: 0 auto !important;
+    }
+
+    .mobile-text {
+      font-size: 14px !important;
+      padding: 0 10px !important; /* Adding 10px left/right padding */
+    }
+  }
+
+  .social-full{
+    display: block !important;
+      width: 100% !important;
+      text-align: center !important;
+
+  }
+  .mobile-btn {
+    font-size: 12px !important;
+    white-space: nowrap !important;
+  }
+
+  .content-pad {
+    padding: 20px !important;
+    max-width: 90% !important;
+  }
+
+</style>
+
 </head>
-<body style="margin:0; padding:0; background-color:#a3a2a2; font-family:poppins, sans-serif;">
-  <!--[if mso]>
-  <style>
-    .mobile-table {width: 100% !important;}
-    .mobile-full {width: 100% !important; display: block !important;}
-    .mobile-half {width: 100% !important; display: block !important;}
-    .mobile-image {width: 100% !important; height: auto !important;}
-    .mobile-text {font-size: 16px !important;}
-    .mobile-button {width: 90% !important; max-width: 142px !important;}
-  </style>
-  <![endif]-->
+<body class = "body" style="margin:0; padding:0; background-color:#a3a2a2 !important; font-family:poppins, sans-serif;">
   
-  <table role="presentation" class="wrapper" align="center" cellpadding="0" cellspacing="0" border="0" width="630" style="background-color:#ffffff; border-top:5px solid rgb(255,148,61); max-width: 630px; width: 100%;">
+  <table role="presentation" class="wrapper" align="center" cellpadding="0" cellspacing="0" border="0" width="630" style="background-color:#ffffff; border-top:5px solid rgb(255,148,61); max-width: 630px; width: 100%; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+
     <!-- Logo -->
     <tr>
       <td class="mobile-full" align="center" style="padding: 15px 0; font-family: poppins, sans-serif;" width="630">
-        <img class="mobile-image" src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/imageeyecare.png" alt="logo" width="252" style="display: block; width: 40%; max-width: 252px; margin: 0 auto; padding: 0; font-family: poppins, sans-serif;" />
+        <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/imageeyecare.png" alt="logo" width="252" style="display: block; width: 40%; max-width: 252px; margin: 0 auto; padding: 0; font-family: poppins, sans-serif;" />
       </td>
     </tr>
     
     <!-- Banner -->
     <tr>
       <td class="mobile-full" width="630">
-        <img class="mobile-image" src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/banner.png" alt="Banner image" width="630" height="300" style="display:block; width:100%; height:auto; max-width:630px;" />
+        <img  src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/banner.png" alt="Banner image" width="630" height="300" style="display:block; width:100%; height:auto; max-width:630px;" />
       </td>
     </tr>
 
-    <!-- Rating -->
+   <!-- Rating -->
     <tr>
       <td class="mobile-full" align="center" style="padding: 15px 0; width: 630; font-family: poppins, sans-serif;">
         <p class="mobile-text" style="margin: 0; padding: 0; font-size: 18px; font-weight: bold; color: #333; font-family: poppins, sans-serif;">Rate And Review</p>
@@ -62,24 +111,27 @@
       </td>
     </tr>
 
-    <!-- Message -->
-    <tr>
-      <td class="mobile-full" style="padding:20px; font-size:16px; line-height:1.6; color:#333; padding-left: 30px;" width="630">
-        <p class="mobile-text" style="margin:0 0 15px 0;">Dear ,</p>
-        <p class="mobile-text" style="margin:0 0 15px 0; line-height: 1.5;">
-          Thank you for visiting our practice. We value your support and trust you enjoyed your eye examination.<br><br>
-          The following information will give you a better understanding of what was done during your consultation, specifically regarding your eye health and visual needs.<br><br>
-          Your vision is important to us, please ensure the health of your eyes is examined regularly...
-        </p>
+<!-- Message -->
+<tr>
+  <td class="mobile-full content-pad" 
+      style="padding: 20px 30px; font-size: 16px; line-height: 1.6; color: #333;" 
+      width="630">
+    <p class="mobile-text" style="margin:0 0 15px 0;">Dear Matthew Vlok,</p>
+    <p class="mobile-text" style="margin:0 0 15px 0; line-height: 1.5;">
+      Thank you for visiting our practice. We value your support and trust you enjoyed your eye examination.<br><br>
+      The following information will give you a better understanding of what was done during your consultation, specifically regarding your eye health and visual needs.<br><br>
+      Your vision is important to us, please ensure the health of your eyes is examined regularly...
+    </p>
 
-        <p class="mobile-text" style="padding-top:10px;">Kind Regards,</p>
-      </td>
-    </tr>
+    <p class="mobile-text" style="padding-top:10px;">Kind Regards,</p>
+  </td>
+</tr>
+
 
     <!-- Doctor -->
     <tr>
-      <td class="mobile-full" style=" padding:15px;" width="630">
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+      <td  style=" padding:15px;" width="630">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="mso-table-lspace:0pt; mso-table-rspace:0pt;" >
           <tr>
             <td width="110" align="center" valign="top" style="padding:0;">
               <!--[if mso]>
@@ -117,15 +169,17 @@
     </tr>
 
     <tr>
-      <td class="mobile-full">
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse:collapse; background-color:#f0eeee;">
+      <td class="sect-full">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse:collapse; background-color:#f0eeee; mso-table-lspace:0pt; mso-table-rspace:0pt;">
           <tr>
-            <td class="mobile-half" width="280" valign="center" align="center">
+            <td class="mobile-half" width="280" valign="center" align="center" >
               <!--[if mso]>
               <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" 
                 xmlns:w="urn:schemas-microsoft-com:office:word"
                 arcsize="10%" 
-                style="height:230px; width:230px;">
+                stroke="false"
+                style="height:240px; width:240px;">
+                
                 <v:fill src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/snellen.png" type="frame"/>
               </v:roundrect>
               <![endif]-->
@@ -133,23 +187,69 @@
               <img class="mobile-image" src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/snellen.png" width="230" height="230" style="width:100%; max-width:230px; border-radius:10%; display:block;">
               <!--<![endif]-->
             </td>
-            <td class="mobile-half" width="350" valign="top" style="padding-top:10px; text-align:center; padding-right: 15px;">
-              <h3 class="mobile-text" style="font-size:22px; color:#2c3e50; font-weight:600; margin:0 auto 0px; display:inline-block;">Why is my vision blurry?</h3>
-              <hr style="  border: 2px solid rgb(255,148,61); width:50px" width="50">
-              <p class="mobile-text" style="font-size:15px; color:#4a5568; margin:0 0 15px; line-height:1.4;">Discover what might be affecting your vision.</p>
-              <p class="mobile-text" style="font-size:15px; color:#4a5568;  line-height:0.2; padding-bottom: 16px;">Select any condition below to learn more.</p>
+            <td class="mobile-half" width="350" align="center" valign="top" style="padding: 20px;">
+              <h3 class="mobile-text" align="center" style="font-size:22px; color:#2c3e50; font-weight:600; margin:0 auto; display:inline-block;">
+                Why is my vision blurry?
+              </h3>
 
-              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+       <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+          <tr>
+            <td align="center" style="padding: 10px 0 18px 0;">       
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="50">
+                <tr>
+                  <td height="2" style="
+                    background-color: rgb(255,148,61); 
+                    line-height:2px; 
+                    font-size:2px; 
+                    mso-line-height-rule:exactly;">
+                    &nbsp;
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" width="100%">
+          <tr>
+              <td align="center" style="
+                  font-size:15px; 
+                  color:#4a5568; 
+                  line-height:1.4; 
+                  font-family:Arial, Helvetica, sans-serif; 
+                  padding:0; /* No bottom padding here */">
+                  Discover what might be affecting your vision.
+              </td>
+          </tr>
+          <tr>
+              <td height="10" style="line-height:10px; font-size:10px; mso-line-height-rule:exactly;">
+                  &nbsp;
+              </td>
+          </tr>
+          <tr>
+              <td align="center" style="
+                  font-size:15px; 
+                  color:#4a5568; 
+                  line-height:1.4; 
+                  font-family:Arial, Helvetica, sans-serif; 
+                  padding:0 0 16px 0; /* Original padding below the entire block */">
+                  Select any condition below to learn more.
+              </td>
+          </tr>
+      </table>
+              
+
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="mso-table-lspace:0pt; mso-table-rspace:0pt;">
                 <tr>
                   <td align="center" style="padding:8px 0;">
                     <!--[if mso]>
-                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="#" style="height:30px; v-text-anchor:middle; width:auto;" arcsize="15%" strokecolor="#FF943D" fillcolor="#FF943D">
-                      <center style="color:#ffffff; font-family:poppins, sans-serif; font-size:14px; padding:0 14px;"><b>MYOPIA</b></center>
-                    </v:roundrect>
+                      <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="#" style="height:40px; v-text-anchor:middle; width:285px;" arcsize="15%" strokecolor="#FF943D" fillcolor="#FF943D">
+                        <center style="color:#ffffff; font-family:poppins, sans-serif; font-size:14px; padding:0;"><b>MYOPIA</b></center> 
+                      </v:roundrect>
                     <![endif]-->
                     <!--[if !mso]><!-->
                    <b> 
-                    <a href="#"
+                    <a href="#"  class="mobile-btn"
                       style="background-color:#FF943D; color:#ffffff; text-decoration:none; font-family:poppins, sans-serif; font-size:14px; line-height:30px; border-radius:6px; padding:0 14px; display:inline-block;">
                       MYOPIA
                     </a>
@@ -161,12 +261,12 @@
                 <tr>
                   <td align="center" style="padding:8px 0;">
                     <!--[if mso]>
-                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="#" style="height:30px; v-text-anchor:middle; width:auto;" arcsize="15%" strokecolor="#FF943D" fillcolor="#FF943D">
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="#" style="height:40px; v-text-anchor:middle; width:285px;" arcsize="15%" strokecolor="#FF943D" fillcolor="#FF943D">
                       <center style="color:#ffffff; font-family:poppins, sans-serif; font-size:14px; padding:0 14px;"><b>ASTIGMATISM</b></center>
                     </v:roundrect>
                     <![endif]-->
                     <!--[if !mso]><!-->
-                   <b> <a href="#"
+                   <b> <a href="#"  class="mobile-btn"
                       style="background-color:#FF943D; color:#ffffff; text-decoration:none; font-family:poppins, sans-serif; font-size:14px; line-height:30px; border-radius:6px; padding:0 14px; display:inline-block;">
                       ASTIGMATISM
                     </a></b>
@@ -176,12 +276,12 @@
                 <tr>
                   <td align="center" style="padding:8px 0;">
                     <!--[if mso]>
-                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="#" style="height:30px; v-text-anchor:middle; width:auto;" arcsize="15%" strokecolor="#FF943D" fillcolor="#FF943D">
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="#" style="height:40px; v-text-anchor:middle; width:285px;" arcsize="15%" strokecolor="#FF943D" fillcolor="#FF943D">
                       <center style="color:#ffffff; font-family:poppins, sans-serif; font-size:14px; padding:0 14px;"><b>PRESBYOPIA</b></center>
                     </v:roundrect>
                     <![endif]-->
                     <!--[if !mso]><!-->
-                    <b><a href="#"
+                    <b><a href="#"  class="mobile-btn"
                       style="background-color:#FF943D; color:#ffffff; text-decoration:none; font-family:poppins, sans-serif; font-size:14px; line-height:30px; border-radius:6px; padding:0 14px; display:inline-block;">
                       PRESBYOPIA
                     </a></b>
@@ -195,7 +295,7 @@
       </td>
     </tr>
 
-    <!-- Spacer 1-->
+        <!-- Spacer 1-->
     <tr>
       <td height="40" style="line-height:20px; font-size:0; background-color:#f0eeee;">&nbsp;</td>
     </tr>
@@ -204,29 +304,69 @@
       <td height="40" style="line-height:20px; font-size:0;">&nbsp;</td>
     </tr>
 
-
-
     <!-- Section 2: Eye Health -->
     <tr>
-      <td class="mobile-full">
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+      <td class="sect-full">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="mso-table-lspace:0pt; mso-table-rspace:0pt;">
           <tr>
-             <td class="mobile-half" width="350" valign="top" style="padding-top:10px; text-align:center; padding-left: 15px;">
-              <h3 class="mobile-text" style="font-size:22px; color:#2c3e50; font-weight:600; margin:0 auto 0px; display:inline-block;">Understanding Your Eye Health</h3>
-              <hr style="  border: 2px solid rgb(255,148,61); width:50px" width="50">
-              <p class="mobile-text" style="font-size:15px; color:#4a5568; margin:0 0 15px; line-height:1.4;">Here's what we found during your examination.</p>
-              <p class="mobile-text" style="font-size:15px; color:#4a5568;  line-height:0.2; padding-bottom: 16px;">Select any condition to explore your results.</p>
+            <td class="mobile-half"  align="center" width="350" valign="top" style="padding: 20px;" dir="ltr">
+              <h3 class="mobile-text" align="center" style="font-size:22px; color:#2c3e50; font-weight:600; margin:0 auto 0px; display:inline-block; ">Understanding Your Eye Health</h3>
+                  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                    <tr>
+                      <td align="center" style="padding: 10px 0 18px 0;">       
+                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="50">
+                          <tr>
+                            <td height="2" style="
+                              background-color: rgb(255,148,61); 
+                              line-height:2px; 
+                              font-size:2px; 
+                              mso-line-height-rule:exactly;">
+                              &nbsp;
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
 
-              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" width="100%">
+                    <tr>
+                        <td align="center" style="
+                            font-size:15px; 
+                            color:#4a5568; 
+                            line-height:1.4; 
+                            font-family:Arial, Helvetica, sans-serif; 
+                            padding:0; /* No bottom padding here */">
+                            Here's what we found during your examination.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="10" style="line-height:10px; font-size:10px; mso-line-height-rule:exactly;">
+                            &nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="
+                            font-size:15px; 
+                            color:#4a5568; 
+                            line-height:1.4; 
+                            font-family:Arial, Helvetica, sans-serif; 
+                            padding:0 0 16px 0; /* Original padding below the entire block */">
+                            Select any condition to explore your results.
+                        </td>
+                    </tr>
+                </table>
+
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="mso-table-lspace:0pt; mso-table-rspace:0pt;">
                 <tr>
                   <td align="center" style="padding:8px 0;">
                     <!--[if mso]>
-                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="#" style="height:30px; v-text-anchor:middle; width:auto;" arcsize="15%" strokecolor="#FF943D" fillcolor="#FF943D">
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="#" style="height:40px; v-text-anchor:middle; width:285px;" arcsize="15%" strokecolor="#FF943D" fillcolor="#FF943D">
                       <center style="color:#ffffff; font-family:poppins, sans-serif; font-size:14px; padding:0 14px;"><b>BLEPHARITIS</b></center>
                     </v:roundrect>
                     <![endif]-->
                     <!--[if !mso]><!-->
-                    <b><a href="#"
+                    <b><a href="#"  class="mobile-btn"
                       style="background-color:#FF943D; color:#ffffff; text-decoration:none; font-family:poppins, sans-serif; font-size:14px; line-height:30px; border-radius:6px; padding:1px 14px  ; display:inline-block;">
                       BLEPHARITIS
                     </a></b>
@@ -238,12 +378,12 @@
                 <tr>
                   <td align="center" style="padding:8px 0;">
                     <!--[if mso]>
-                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="#" style="height:30px; v-text-anchor:middle; width:auto;" arcsize="15%" strokecolor="#FF943D" fillcolor="#FF943D">
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="#" style="height:40px; v-text-anchor:middle; width:285px;" arcsize="15%" strokecolor="#FF943D" fillcolor="#FF943D">
                       <center style="color:#ffffff; font-family:poppins, sans-serif; font-size:14px; padding:0 14px;"><b>DIABETIC RETINOPATHY</b></center>
                     </v:roundrect>
                     <![endif]-->
                     <!--[if !mso]><!-->
-                   <b> <a href="#"
+                   <b> <a href="#"  class="mobile-btn"
                       style="background-color:#FF943D; color:#ffffff; text-decoration:none; font-family:poppins, sans-serif; font-size:14px; line-height:30px; border-radius:6px; padding:0 14px; display:inline-block;">
                       DIABETIC RETINOPATHY
                     </a></b>
@@ -257,7 +397,8 @@
               <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" 
                 xmlns:w="urn:schemas-microsoft-com:office:word"
                 arcsize="10%" 
-                style="height:230px; width:230px;">
+                stroke="false"
+                style="height:240px; width:240px;">
                 <v:fill src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/phoropter.png" type="frame"/>
               </v:roundrect>
               <![endif]-->
@@ -282,15 +423,16 @@
 
     <!-- Section 3: Treatment -->
     <tr>
-      <td class="mobile-full">
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color:#f0eeee;">
+      <td class="sect-full">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color:#f0eeee; mso-table-lspace:0pt; mso-table-rspace:0pt;">
           <tr>
             <td class="mobile-half" width="280" valign="center" align="center">
               <!--[if mso]>
               <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" 
                 xmlns:w="urn:schemas-microsoft-com:office:word"
                 arcsize="10%" 
-                style="height:230px; width:230px;">
+                stroke="false"
+                style="height:240px; width:240px;">
                 <v:fill src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/glasses.png" type="frame"/>
               </v:roundrect>
               <![endif]-->
@@ -298,22 +440,64 @@
               <img class="mobile-image" src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/glasses.png" width="230" height="230" style="width:100%; max-width:230px; border-radius:10%; display:block;">
               <!--<![endif]-->
             </td>
-            <td class="mobile-half" width="350" valign="top" style="padding-top:10px; text-align:center;">
-              <h3 class="mobile-text" style="font-size:22px; color:#2c3e50; font-weight:600; margin:0 auto 0px; display:inline-block; padding-right: 15px;">Your Vision Correction Options</h3>
-              <hr style="  border: 2px solid rgb(255,148,61); width:50px" width="50">
-              <p class="mobile-text" style="font-size:15px; color:#4a5568; margin:0 0 15px; line-height:1.4;">Explore your personalized treatment options.</p>
-              <p class="mobile-text" style="font-size:15px; color:#4a5568;  line-height:0.2; padding-bottom: 16px;">Select any below to learn more.</p>
+            <td class="mobile-half"  align="center" width="350" valign="top" style="padding: 20px;">
+              <h3 class="mobile-text" align="center" style="font-size:22px; color:#2c3e50; font-weight:600; margin:0 auto 0px; display:inline-block;">Your Vision Correction Options</h3>
+                 <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+        <tr>
+          <td align="center" style="padding: 10px 0 18px 0;">       
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="50">
+              <tr>
+                <td height="2" style="
+                  background-color: rgb(255,148,61); 
+                  line-height:2px; 
+                  font-size:2px; 
+                  mso-line-height-rule:exactly;">
+                  &nbsp;
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
 
-              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" width="100%">
+        <tr>
+            <td align="center" style="
+                font-size:15px; 
+                color:#4a5568; 
+                line-height:1.4; 
+                font-family:Arial, Helvetica, sans-serif; 
+                padding:0; /* No bottom padding here */">
+                Explore your personalized treatment options.
+            </td>
+        </tr>
+        <tr>
+            <td height="10" style="line-height:10px; font-size:10px; mso-line-height-rule:exactly;">
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td align="center" style="
+                font-size:15px; 
+                color:#4a5568; 
+                line-height:1.4; 
+                font-family:Arial, Helvetica, sans-serif; 
+                padding:0 0 16px 0; /* Original padding below the entire block */">
+                Select any below to learn more.
+            </td>
+        </tr>
+    </table>
+
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="mso-table-lspace:0pt; mso-table-rspace:0pt;">
                 <tr>
                   <td align="center" style="padding:8px 0;">
                     <!--[if mso]>
-                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="#" style="height:30px; v-text-anchor:middle; width:auto;" arcsize="15%" strokecolor="#FF943D" fillcolor="#FF943D">
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="#" style="height:40px; v-text-anchor:middle; width:285px;" arcsize="15%" strokecolor="#FF943D" fillcolor="#FF943D">
                       <center style="color:#ffffff; font-family:poppins, sans-serif; font-size:14px; padding:0 14px;"><b>SINGLE VISION</b></center>
                     </v:roundrect>
                     <![endif]-->
                     <!--[if !mso]><!-->
-                    <b><a href="#"
+                    <b><a href="#"  class="mobile-btn"
                       style="background-color:#FF943D; color:#ffffff; text-decoration:none; font-family:poppins, sans-serif; font-size:14px; line-height:30px; border-radius:6px; padding:0 14px; display:inline-block;">
                       SINGLE VISION
                     </a></b>
@@ -324,12 +508,12 @@
                 <tr>
                   <td align="center" style="padding:8px 0;">
                     <!--[if mso]>
-                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="#" style="height:30px; v-text-anchor:middle; width:auto;" arcsize="15%" strokecolor="#FF943D" fillcolor="#FF943D">
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="#" style="height:40px; v-text-anchor:middle; width:285px;" arcsize="15%" strokecolor="#FF943D" fillcolor="#FF943D">
                       <center style="color:#ffffff; font-family:poppins, sans-serif; font-size:14px; padding:0 14px;"><b>BIFOCAL</b></center>
                     </v:roundrect>
                     <![endif]-->
                     <!--[if !mso]><!-->
-                    <b><a href="#"
+                    <b><a href="#"  class="mobile-btn"
                       style="background-color:#FF943D; color:#ffffff; text-decoration:none; font-family:poppins, sans-serif; font-size:14px; line-height:30px; border-radius:6px; padding:0 14px; display:inline-block;">
                       BIFOCAL
                     </a></b>
@@ -339,12 +523,12 @@
                 <tr>
                   <td align="center" style="padding:8px 0;">
                     <!--[if mso]>
-                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="#" style="height:30px; v-text-anchor:middle; width:auto;" arcsize="15%" strokecolor="#FF943D" fillcolor="#FF943D">
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="#" style="height:40px; v-text-anchor:middle; width:285px;" arcsize="15%" strokecolor="#FF943D" fillcolor="#FF943D">
                       <center style="color:#ffffff; font-family:poppins, sans-serif; font-size:14px; padding:0 14px;"><b>HRI</b></center>
                     </v:roundrect>
                     <![endif]-->
                     <!--[if !mso]><!-->
-                    <b><a href="#"
+                    <b><a href="#"  class="mobile-btn"
                       style="background-color:#FF943D; color:#ffffff; text-decoration:none; font-family:poppins, sans-serif; font-size:14px; line-height:30px; border-radius:6px; padding:0 14px; display:inline-block;">
                       HRI
                     </a></b>
@@ -354,12 +538,12 @@
                 <tr>
                   <td align="center" style="padding:8px 0;">
                     <!--[if mso]>
-                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="#" style="height:30px; v-text-anchor:middle; width:auto;" arcsize="15%" strokecolor="#FF943D" fillcolor="#FF943D">
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="#" style="height:40px; v-text-anchor:middle; width:285px;" arcsize="15%" strokecolor="#FF943D" fillcolor="#FF943D">
                       <center style="color:#ffffff; font-family:poppins, sans-serif; font-size:14px; padding:0 14px;"><b>POLARISATION</b></center>
                     </v:roundrect>
                     <![endif]-->
                     <!--[if !mso]><!-->
-                    <b><a href="#"
+                    <b><a href="#"  class="mobile-btn"
                       style="background-color:#FF943D; color:#ffffff; text-decoration:none; font-family:poppins, sans-serif; font-size:14px; line-height:30px; border-radius:6px; padding:0 14px; display:inline-block;">
                       POLARISATION
                     </a></b>
@@ -384,34 +568,74 @@
 
     <!-- Section 4: General Info -->
     <tr>
-      <td class="mobile-full">
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+      <td class="sect-full">
+        <table role="presentation" cellpadding="0" cellspacing="0" align= "center" border="0" width="100%" style="mso-table-lspace:0pt; mso-table-rspace:0pt;">
           <tr>
-             <td class="mobile-half" width="350" valign="top" style="padding-top:10px; text-align:center; padding-left: 15px;">
+            <td class="mobile-half" width="350" valign="top" align="center" style="padding: 20px;" dir="ltr">
               <h3 class="mobile-text" style="font-size:22px; color:#2c3e50; font-weight:600; margin:0 auto 0px; display:inline-block;">Eye Care Resources</h3>
-              <hr style="  border: 2px solid rgb(255,148,61); width:50px" width="50">
-              <p class="mobile-text" style="font-size:15px; color:#4a5568; margin:0 0 15px; line-height:1.4;">Extra information to help protect your vision.</p>
-              <p class="mobile-text" style="font-size:15px; color:#4a5568;  line-height:0.2; padding-bottom: 16px;">Select any topic to learn more.</p>
-
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-                
-               
+                    <tr>
+                      <td align="center" style="padding: 10px 0 18px 0;">       
+                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="50">
+                          <tr>
+                            <td height="2" style="
+                              background-color: rgb(255,148,61); 
+                              line-height:2px; 
+                              font-size:2px; 
+                              mso-line-height-rule:exactly;">
+                              &nbsp;
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+
+                <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" width="100%">
+                    <tr>
+                        <td align="center" style="
+                            font-size:15px; 
+                            color:#4a5568; 
+                            line-height:1.4; 
+                            font-family:Arial, Helvetica, sans-serif; 
+                            padding:0; /* No bottom padding here */">
+                            Extra information to help protect your vision.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="10" style="line-height:10px; font-size:10px; mso-line-height-rule:exactly;">
+                            &nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="
+                            font-size:15px; 
+                            color:#4a5568; 
+                            line-height:1.4; 
+                            font-family:Arial, Helvetica, sans-serif; 
+                            padding:0 0 16px 0; /* Original padding below the entire block */">
+                            Select any topic to learn more.
+                        </td>
+                    </tr>
+                </table>
+
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="mso-table-lspace:0pt; mso-table-rspace:0pt;">
                 <tr>
                   <td align="center" style="padding:8px 0;">
                     <!--[if mso]>
-                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="#" style="height:30px; v-text-anchor:middle; width:auto;" arcsize="15%" strokecolor="#FF943D" fillcolor="#FF943D">
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="#" style="height:40px; v-text-anchor:middle; width:285px;" arcsize="15%" strokecolor="#FF943D" fillcolor="#FF943D">
                       <center style="color:#ffffff; font-family:poppins, sans-serif; font-size:14px; padding:0 14px;"><b>SCREEN TIME & DEVICE TIPS</b></center>
                     </v:roundrect>
                     <![endif]-->
                     <!--[if !mso]><!-->
-                   <b> <a href="#"
+                   <b> <a href="#" class="mobile-btn"
                       style="background-color:#FF943D; color:#ffffff; text-decoration:none; font-family:poppins, sans-serif; font-size:14px; line-height:30px; border-radius:6px; padding:0 14px; display:inline-block;">
                       SCREEN TIME & DEVICE TIPS
                     </a></b>
                     <!--<![endif]-->
                   </td>
                 </tr>
-               
+                
               </table>
             </td>
             <td class="mobile-half" width="280" valign="center" align="center">
@@ -419,7 +643,8 @@
               <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" 
                 xmlns:w="urn:schemas-microsoft-com:office:word"
                 arcsize="10%" 
-                style="height:230px; width:230px;">
+                stroke="false"
+                style="height:240px; width:240px;">
                 <v:fill src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/general.png" type="frame"/>
               </v:roundrect>
               <![endif]-->
@@ -438,11 +663,11 @@
 
     <!-- Connect -->
     <tr>
-      <td class="mobile-full" style="background-color: #ff943d; padding: 20px 0; text-align: center; font-family: poppins, sans-serif; color: #ffffff;" width="630">
+      <td class="social-full" style="background-color: #ff943d; padding: 20px 0; text-align: center; font-family: poppins, sans-serif; color: #ffffff;" width="630">
         <h2 class="mobile-text" style="margin: 0 0 20px 0; padding: 0; font-size: 24px; font-family: poppins, sans-serif;">Let's Connect!</h2>
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin: 0 auto;">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin: 0 auto; mso-table-lspace:0pt; mso-table-rspace:0pt;">
           <tr>
-            <td style="padding: 0 5px;">
+            <td style="padding: 0 5px;" class="social-img">
               <a href="index.html">
                 <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/wWeb.png" alt="Website" width="40" height="40" style="display:block;" />
               </a>
@@ -488,31 +713,57 @@
     </tr>
 
     <!-- Footer -->
-    <tr>
-      <td class="mobile-full" style="padding:20px; font-size:14px; color:#666;" width="630">
-        <table role="presentation" width="100%" cellpadding="5" cellspacing="0" border="0">
-          <tr>
-            <td class="mobile-stack" valign="top" style="font-size:14px; color:#666;">
-              <p style="margin:0;">
-                <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/emailfoot.png" width="18" height="18" style="vertical-align:middle; margin-right:5px;">
-                <a href="mailto:support@nevadacloud.com" style="color:#666; text-decoration:none; vertical-align:middle; font-size:14px;">support@nevadacloud.com</a>
-              </p>
-              <p style="margin:10px 0 0 0;">
-                <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/phonefoot.png" width="18" height="18" style="vertical-align:middle; margin-right:5px;">
-                <a href="tel:+27418800051" style="color:#666; text-decoration:none; vertical-align:middle; font-size:14px;">+27 41 880 0051</a>
-              </p>
-              <p style="margin:10px 0 0 0;">
-                <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/websitefoot.png" width="18" height="18" style="vertical-align:middle; margin-right:5px;">
-                <a href="https://nevadacloud.com/" style="color:#666; text-decoration:none; vertical-align:middle; font-size:14px;" target="_blank">https://nevadacloud.com/</a>
-              </p>
-            </td>
-            <td class="mobile-stack" align="center" valign="middle" style="padding-top: 15px;">
-              <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/created.jpg" alt="Created" style="height:25px;">
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
+   <tr>
+  <td class="mobile-full" style="padding:20px; font-size:14px; color:#666;" width="630">
+    <table role="presentation" width="100%" cellpadding="5" cellspacing="0" border="0" style="mso-table-lspace:0pt; mso-table-rspace:0pt;">
+      <tr>
+        <td class="mobile-stack" valign="top" style="font-size:14px; color:#666;">
+          
+          <!-- Email -->
+          <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:10px;">
+            <tr>
+              <td valign="middle" style="padding-right:8px;">
+                <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/emailfoot.png" width="18" height="18" alt="Email icon">
+              </td>
+              <td valign="middle" style="font-size:14px; color:#666;">
+                <a href="mailto:support@nevadacloud.com" style="color:#666; text-decoration:none;">support@nevadacloud.com</a>
+              </td>
+            </tr>
+          </table>
+
+          <!-- Phone -->
+          <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:10px;">
+            <tr>
+              <td valign="middle" style="padding-right:8px;">
+                <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/phonefoot.png" width="18" height="18" alt="Phone icon">
+              </td>
+              <td valign="middle" style="font-size:14px; color:#666;">
+                <a href="tel:+27418800051" style="color:#666; text-decoration:none;">+27 41 880 0051</a>
+              </td>
+            </tr>
+          </table>
+
+          <!-- Website -->
+          <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+              <td valign="middle" style="padding-right:8px;">
+                <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/websitefoot.png" width="18" height="18" alt="Website icon">
+              </td>
+              <td valign="middle" style="font-size:14px; color:#666;">
+                <a href="https://nevadacloud.com/" target="_blank" style="color:#666; text-decoration:none;">https://nevadacloud.com/</a>
+              </td>
+            </tr>
+          </table>
+
+        </td>
+        <td class="mobile-stack" align="center" valign="middle" style="padding-top: 15px;">
+          <img src="https://raw.githubusercontent.com/sim0n-sk8/emailAssets/main/reportRedo/assets/created.jpg" alt="Created" style="height:20px;">
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+
   </table>
 </body>
 </html>
