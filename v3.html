@@ -16,24 +16,57 @@
       
     }
 
+ 
+
     .mobile-full {
       display: block !important;
       width: 100% !important;
     }
 
-     .sect-full {
-      display: block !important;
-      width: 100% !important;
-      text-align: center !important;
-    }
 
-     .mobile-half img {
-      display: block !important;
-      width: 100% !important;
-      max-width: 100% !important;
-      height: auto !important;
-      
-    }
+
+.sect-full {
+  display: block !important;
+  width: 100% !important;
+  text-align: center !important;
+}
+
+.mobile-half {
+  display: inline-block !important;
+  width: 50% !important;
+  max-width: 50% !important;
+  padding: 5px 0 !important;
+  margin: 5px !important;
+  vertical-align: middle !important;
+}
+
+.mobile-img-half {
+  /* This keeps the element in the inline flow (side-by-side) */
+  display: inline-flex !important; 
+  /* These flex properties center the content (the image) vertically and horizontally inside this container */
+  align-items: center !important;
+  justify-content: center !important;
+  
+  width: 39% !important;
+  max-width: 39% !important;
+
+  margin: 5px auto !important;
+  /* This property is crucial for aligning this container with its inline-block neighbors (like .mobile-half) */
+  vertical-align: middle !important; 
+}
+
+.mobile-img-half img{
+  width: 90% !important;
+  max-width: 90% !important;
+  height: auto !important;
+  /* The display: block and margin: 0 auto are now managed by the inline-flex parent */
+  display: block !important;
+  margin: 0 auto !important;
+}
+
+   
+
+   
 
      .content-pad {
     padding: 20px !important;
@@ -174,7 +207,7 @@
       <td class="sect-full">
         <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse:collapse; background-color:#f0eeee; mso-table-lspace:0pt; mso-table-rspace:0pt;">
           <tr>
-            <td class="mobile-half" width="300" valign="center" align="center" >
+            <td class="mobile-img-half" width="300" valign="center" align="center">
               <!--[if mso]>
               <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" 
                 xmlns:w="urn:schemas-microsoft-com:office:word"
@@ -385,7 +418,7 @@
                 </tr>
               </table>
             </td>
-            <td class="mobile-half" width="300" valign="center" align="center">
+            <td class="mobile-img-half" width="300" valign="center" align="center">
               <!--[if mso]>
               <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" 
                 xmlns:w="urn:schemas-microsoft-com:office:word"
@@ -419,7 +452,7 @@
       <td class="sect-full">
         <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color:#f0eeee; mso-table-lspace:0pt; mso-table-rspace:0pt;">
           <tr>
-            <td class="mobile-half" width="300" valign="center" align="center">
+            <td class="mobile-img-half" width="300" valign="center" align="center">
               <!--[if mso]>
               <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" 
                 xmlns:w="urn:schemas-microsoft-com:office:word"
@@ -622,7 +655,7 @@
                 
               </table>
             </td>
-            <td class="mobile-half" width="300" valign="center" align="center" >
+            <td class="mobile-img-half" width="300" valign="center" align="center" >
               <!--[if mso]>
               <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" 
                 xmlns:w="urn:schemas-microsoft-com:office:word"
