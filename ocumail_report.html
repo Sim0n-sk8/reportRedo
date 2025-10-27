@@ -1,0 +1,182 @@
+<span style="display:none">Your eye examination report includes information from your consultation on diagnosis and prescribed treatment plan. It is of utmost important to us, as your eye care practitioner, that you receive unbiased, clinically accurate information in order to better care for your vision.</span>
+<table width="640" border="0" cellspacing="0" cellpadding="0" align="center" style="background-color:#ffffff; border-top: 5px solid {{appConfig.$storage.activePractice.Settings.PrimaryColor}};">
+	<tr>
+		<td style="padding-left: 25px; padding-top: 25px; padding-bottom: 25px;" width="140"><a target="_blank"><img ng-src="{{appConfig.$storage.activePractice.Settings.PracticeLogoURL}}" height="65" border="0"></a></td>
+		<td align="right" style="font-family:Arial, Helvetica, sans-serif; font-size:14px; padding-right: 25px; padding-top: 25px; padding-bottom: 25px;" width="450">
+			<a target="_blank" ng-if="appConfig.$storage.activePractice.facebook_url" ng-href="{{eyecareportalUrl}}/social_media_redirect/{{appConfig.$storage.activePractice.id}}/{{$ctrl.ocumailData.mail_uuid}}/facebook" style="display: inline-block; border-radius: 50%; width:32px; height: 32px; background-color: {{appConfig.$storage.activePractice.Settings.SecondaryColor}};">
+				<img ng-src="{{mailbase_url}}/images/fb.png" width="32" height="32" border="0">
+			</a>
+			<a target="_blank" ng-if="appConfig.$storage.activePractice.twitter_url" ng-href="{{eyecareportalUrl}}/social_media_redirect/{{appConfig.$storage.activePractice.id}}/{{$ctrl.ocumailData.mail_uuid}}/twitter" style="display: inline-block; border-radius: 50%; width:32px; height: 32px; background-color: {{appConfig.$storage.activePractice.Settings.SecondaryColor}};">
+				<img ng-src="{{mailbase_url}}/images/x-twitter.png" width="32" height="32" border="0">
+			</a>
+			<a target="_blank" ng-if="appConfig.$storage.activePractice.linkedin_url" ng-href="{{eyecareportalUrl}}/social_media_redirect/{{appConfig.$storage.activePractice.id}}/{{$ctrl.ocumailData.mail_uuid}}/linkedin" style="display: inline-block; border-radius: 50%; width:32px; height: 32px; background-color: {{appConfig.$storage.activePractice.Settings.SecondaryColor}};">
+				<img ng-src="{{mailbase_url}}/images/linkedin.png" width="32" height="32" border="0">
+			</a>
+			<a target="_blank" ng-if="appConfig.$storage.activePractice.instagram_url" ng-href="{{eyecareportalUrl}}/social_media_redirect/{{appConfig.$storage.activePractice.id}}/{{$ctrl.ocumailData.mail_uuid}}/instagram" style="display: inline-block; border-radius: 50%; width:32px; height: 32px; background-color: {{appConfig.$storage.activePractice.Settings.SecondaryColor}};">
+				<img ng-src="{{mailbase_url}}/images/instagram.png" width="32" height="32" border="0">
+			</a>
+			<a target="_blank" ng-if="appConfig.$storage.activePractice.pinterest_url" ng-href="{{eyecareportalUrl}}/social_media_redirect/{{appConfig.$storage.activePractice.id}}/{{$ctrl.ocumailData.mail_uuid}}/pinterest" style="display: inline-block; border-radius: 50%; width:32px; height: 32px; background-color: {{appConfig.$storage.activePractice.Settings.SecondaryColor}};">
+				<img ng-src="{{mailbase_url}}/images/pinterest.png" width="32" height="32" border="0">
+			</a>
+			<a target="_blank" ng-if="appConfig.$storage.activePractice.tiktok_url" ng-href="{{eyecareportalUrl}}/social_media_redirect/{{appConfig.$storage.activePractice.id}}/{{$ctrl.ocumailData.mail_uuid}}/tiktok" style="display: inline-block; border-radius: 50%; width:32px; height: 32px; background-color: {{appConfig.$storage.activePractice.Settings.SecondaryColor}};">
+				<img ng-src="{{mailbase_url}}/images/tiktok-logo-1.png" width="32" height="32" border="0">
+			</a>
+			<a target="_blank" ng-if="appConfig.$storage.activePractice.google_business_profile_url" ng-href="{{eyecareportalUrl}}/social_media_redirect/{{appConfig.$storage.activePractice.id}}/{{$ctrl.ocumailData.mail_uuid}}/google_business_profile" style="display: inline-block; border-radius: 50%; width:32px; height: 32px; background-color: {{appConfig.$storage.activePractice.Settings.SecondaryColor}};">
+				<img ng-src="{{mailbase_url}}/images/google-mbp-logo.png" width="32" height="32" border="0">
+			</a>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<a target="_blank"><img ng-src="{{$ctrl.ocumailData.banner_url}}" width="640" height="240" border="0"></a>
+		</td>
+	</tr>
+	<tr ng-if="showRating && appConfig.$storage.activePractice.custom_rating_logo != 'none'">
+		<td colspan="2" style="padding: 25px; text-align: center;">
+			<strong style="font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#888888;">Rate and review</strong><br>
+			<span style="font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#888888;">Share your experience to help others</span><br>
+			<div ng-if="appConfig.$storage.activePractice.custom_rating_logo == 'stars'">
+				<a ng-href="{{eyecareportalUrl}}/practice_review_link/{{appConfig.$storage.activePractice.id}}/1/{{$ctrl.ocumailData.mail_uuid}}" target="_blank"><img ng-src="{{mailbase_url}}/images/stars1.jpg" width="40" height="45" border="0"></a>
+				<a ng-href="{{eyecareportalUrl}}/practice_review_link/{{appConfig.$storage.activePractice.id}}/2/{{$ctrl.ocumailData.mail_uuid}}" target="_blank"><img ng-src="{{mailbase_url}}/images/stars2.jpg" width="40" height="45" border="0"></a>
+				<a ng-href="{{eyecareportalUrl}}/practice_review_link/{{appConfig.$storage.activePractice.id}}/3/{{$ctrl.ocumailData.mail_uuid}}" target="_blank"><img ng-src="{{mailbase_url}}/images/stars3.jpg" width="40" height="45" border="0"></a>
+				<a ng-href="{{eyecareportalUrl}}/practice_review_link/{{appConfig.$storage.activePractice.id}}/4/{{$ctrl.ocumailData.mail_uuid}}" target="_blank"><img ng-src="{{mailbase_url}}/images/stars4.jpg" width="40" height="45" border="0"></a>
+				<a ng-href="{{eyecareportalUrl}}/practice_review_link/{{appConfig.$storage.activePractice.id}}/5/{{$ctrl.ocumailData.mail_uuid}}" target="_blank"><img ng-src="{{mailbase_url}}/images/stars5.jpg" width="40" height="45" border="0"></a>
+			</div>
+			<a href='{{eyecareportalUrl}}/practice_review_link/{{appConfig.$storage.activePractice.id}}/0/{{$ctrl.ocumailData.mail_uuid}}' target="_blank" ng-if="appConfig.$storage.activePractice.custom_rating_logo == 'facebook'"><img width='200' src='/images/Facebook_review.jpg'></a>
+			<a href='{{eyecareportalUrl}}/practice_review_link/{{appConfig.$storage.activePractice.id}}/0/{{$ctrl.ocumailData.mail_uuid}}' target="_blank" ng-if="appConfig.$storage.activePractice.custom_rating_logo == 'google'"><img width='200' src='/images/Google_review.jpg'></a>
+			<br>
+			<div ng-if="appConfig.$storage.activePractice.alt_custom_rating_logo == 'stars'">
+				<a ng-href="{{eyecareportalUrl}}/practice_review_link_alt/{{appConfig.$storage.activePractice.id}}/1/{{$ctrl.ocumailData.mail_uuid}}" target="_blank"><img ng-src="{{mailbase_url}}/images/stars1.jpg" width="40" height="45" border="0"></a>
+				<a ng-href="{{eyecareportalUrl}}/practice_review_link_alt/{{appConfig.$storage.activePractice.id}}/2/{{$ctrl.ocumailData.mail_uuid}}" target="_blank"><img ng-src="{{mailbase_url}}/images/stars2.jpg" width="40" height="45" border="0"></a>
+				<a ng-href="{{eyecareportalUrl}}/practice_review_link_alt/{{appConfig.$storage.activePractice.id}}/3/{{$ctrl.ocumailData.mail_uuid}}" target="_blank"><img ng-src="{{mailbase_url}}/images/stars3.jpg" width="40" height="45" border="0"></a>
+				<a ng-href="{{eyecareportalUrl}}/practice_review_link_alt/{{appConfig.$storage.activePractice.id}}/4/{{$ctrl.ocumailData.mail_uuid}}" target="_blank"><img ng-src="{{mailbase_url}}/images/stars4.jpg" width="40" height="45" border="0"></a>
+				<a ng-href="{{eyecareportalUrl}}/practice_review_link_alt/{{appConfig.$storage.activePractice.id}}/5/{{$ctrl.ocumailData.mail_uuid}}" target="_blank"><img ng-src="{{mailbase_url}}/images/stars5.jpg" width="40" height="45" border="0"></a>
+			</div>
+			<a href='{{eyecareportalUrl}}/practice_review_link_alt/{{appConfig.$storage.activePractice.id}}/0/{{$ctrl.ocumailData.mail_uuid}}' target="_blank" ng-if="appConfig.$storage.activePractice.alt_custom_rating_logo == 'facebook'"><img width='200' src='/images/Facebook_review.jpg'></a>
+			<a href='{{eyecareportalUrl}}/practice_review_link_alt/{{appConfig.$storage.activePractice.id}}/0/{{$ctrl.ocumailData.mail_uuid}}' target="_blank" ng-if="appConfig.$storage.activePractice.alt_custom_rating_logo == 'google'"><img width='200' src='/images/Google_review.jpg'></a>
+		</td>
+	</tr>
+	<tr>
+		<td style="font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#888888; padding: 25px;" colspan="2">
+			<span ng-if="$ctrl.ocumailData.patient_language == 'English'">Dear</span>
+			<span ng-if="$ctrl.ocumailData.patient_language == 'Afrikaans'">Geagte</span>
+			{{$ctrl.ocumailData.patient_preferred_name}}<span ng-if="$ctrl.ocumailData.patient_language == 'Xhosa'"> othandekayo</span>,<br/><br/>
+			<span id="message_body_pre" style="white-space: pre-wrap;">{{$ctrl.ocumailData.message_body}}</span>
+		</td>
+	</tr>
+	<tr ng-if="$ctrl.ocumailData.next_consultation_date">
+		<td style="padding: 25px; padding-top:0px" colspan="2">
+			<table width="590" border="0" cellspacing="0" cellpadding="0" align="center" style="border: 1px solid #e1e1e1;">
+				<tr>
+					<td style="padding: 15px;">
+						<table width="560" border="0" cellspacing="0" cellpadding="0" align="center">
+							<tr>
+								<td colspan="2" style="line-height: 1.2;font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#2b2b2b;">
+									Your next appointment is:
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2" style="line-height: 1.2; font-family:Arial, Helvetica, sans-serif; font-size:28px; color:#2b2b2b; font-weight: bold;">
+									{{$ctrl.ocumailData.next_consultation_date | date:'d MMM yyyy' }}
+								</td>
+							</tr>
+							<tr>
+								<td width="410" style="line-height: 1.2; font-family:Arial, Helvetica, sans-serif; font-size:28px; color:#2b2b2b; font-weight: bold;">
+									{{$ctrl.ocumailData.next_consultation_date | date:'H:mm' }}
+								</td>
+								<td width="150" style="font-family:Arial, Helvetica, sans-serif; background-color: {{appConfig.$storage.activePractice.Settings.PrimaryColor}}; text-align: center;">
+									<a href="cid:cal_data" style="color: #ffffff;">Add to calendar</a>
+								</td>
+							</tr>	
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td style="font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#888888; padding: 25px; padding-top: 0px;" colspan="2">
+			<span ng-if="$ctrl.ocumailData.patient_language == 'English'">Kind Regards,</span>
+			<span ng-if="$ctrl.ocumailData.patient_language == 'Afrikaans'">Vriendelike groete,</span>
+			<span ng-if="$ctrl.ocumailData.patient_language == 'Xhosa'">Ozithobileyo,</span>
+			<br>
+			<span ng-if="!$ctrl.ocumailData.practitioner">{{appConfig.$storage.activePractice.name}}</span>
+		</td>
+	</tr>
+	<tr ng-if="$ctrl.ocumailData.practitioner">
+		<td colspan="2" style="padding-bottom: 20px">
+			<table width="100%" border="0" cellspacing="0" cellpadding="30">
+		<td style="padding-left: 20px;" width="77">
+			<img width="77" height="77" style="width: 77px; height: 77px; border-radius: 50%;" ng-src="{{$ctrl.ocumailData.practitioner.profile_photo_url}}">
+		</td>
+		<td style="font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#888888; padding-left: 20px;" width="523">
+			<span style="font-size : 18px;">{{$ctrl.ocumailData.practitioner.name}} {{$ctrl.ocumailData.practitioner.surname}}</span><br>
+			<span style='font-size: 16px'>{{$ctrl.ocumailData.practitioner.position}}</span><br>
+			<span>{{$ctrl.ocumailData.practitioner.qualification}}</span><br>
+		</td>
+		</table>
+		</td>
+	</tr>
+	<tr ng-repeat="section in $ctrl.ocumailData.infoSections | orderBy : '-ocumail_order'" >
+		<td colspan="2" ng-attr-style="{{($index % 2 == 0)  ? '' : 'background-color:rgb(247,247,247)' }}">
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+				<tr class='content_item' ng-attr-id="item_{{section.id}}">
+					<td width="150" style="vertical-align:top; padding:25px;"><img style="background-color: #dddddd;" ng-src="{{appConfig.createItemImageLink(section)}}" width="150" height="150" border="0" /></td>
+					<td width="575" style="font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#888888; padding: 25px 25px 25px 0; vertical-align: top;">
+						<span style="font-size: 18px; color: #555555;" ng-bind-html="section.title"></span>
+						<br/>
+						<div ng-bind-html="section.body"></div>
+						<br/>
+						<table border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td style="padding: 10px; background-color: {{appConfig.$storage.activePractice.Settings.PrimaryColor}}; -webkit-border-radius:3px; border-radius:3px" align="center"><a ng-href="{{appConfig.createItemRedirectLink(section,$ctrl.ocumailData.mail_uuid)}}" target="_blank" style="font-size: 14px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #ffffff; text-decoration: none; display: inline-block;">Read More</a></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>      
+	</tr>
+	<tr>
+		<td colspan="2" style="text-align: center; font-family:Arial, Helvetica, sans-serif; font-size:18px; padding: 10px 0; line-height: 30px; background-color: {{appConfig.$storage.activePractice.Settings.PrimaryColor}};"><a ng-if="appConfig.$storage.activePractice.website || appConfig.$storage.activePractice.Settings.EnablePracticeWebsite == true" ng-href="{{eyecareportalUrl}}/practice_website_redirect/{{appConfig.$storage.activePractice.id}}/{{$ctrl.ocumailData.mail_uuid}}" target="_blank" style="color: #fff; text-decoration: none;">Visit our website</a>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" style="background-color: #ffffff; padding: 20px 0px 20px 0px; border-bottom: 1px solid #eeeeee;">
+			<table border="0" cellspacing="0" cellpadding="0" width="100%">
+				<tr>
+						<td style="font-family:Arial, Helvetica, sans-serif; font-size:11px; padding-left: 25px; line-height: 20px;" width="295">
+							<img ng-src="{{mailbase_url}}/images/mail.jpg" width="16" height="15" border="0">
+							<a href="mailto:{{appConfig.$storage.activePractice.email}}" target="_blank" style="color:#888888; text-decoration:none;">&nbsp;&nbsp;{{appConfig.$storage.activePractice.email}}</a>
+							<br>
+							<span ng-if="appConfig.$storage.activePractice.tel">
+								<span style="display: inline-block; width: 17px;"><img ng-src="{{mailbase_url}}/images/phone.jpg" width="12" height="12" border="0"></span>
+								<a href="tel:{{appConfig.$storage.activePractice.tel}}" style="font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#888888;">&nbsp;&nbsp;{{appConfig.$storage.activePractice.tel}}</a>
+							</span>
+						</td>
+						<td style="font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#888888; padding-right: 25px; text-align: right;" align="right" width="295">
+							<a style="font-family:Arial, Helvetica, sans-serif; font-size:11px; color:#888888; " target="_blank" href="https://maps.google.com?q={{PhysicalAdress()}}" >{{PhysicalAdress()}}</a>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<table border="0" cellspacing="0" cellpadding="0" width="100%">
+				<tr>
+					<td width="295" style="vertical-align:top; padding: 25px 25px;">
+					</td>
+					<td width="295" align="right" style="font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#888888; padding: 25px 25px; text-align: right">
+						<a target="_blank"><img ng-src="{{mailbase_url}}/images/created.jpg" width="157" height="30" border="0"></a>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td style="font-family:Arial, Helvetica, sans-serif; font-size:8px;  padding: 0px; text-align: center" colspan="2">
+			<p style="padding: 12px"><a style="color:#888888; text-decoration: none;" target="_blank" href=":::mail_pref_link:::">Manage your preferences | Unsubscribe</a></p>
+		</td>
+	</tr>
+</table>
